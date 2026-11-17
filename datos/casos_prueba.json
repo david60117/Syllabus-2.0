@@ -1,0 +1,530 @@
+{
+  "casos": [
+    {
+      "id": "CP-01",
+      "descripcion": "Promedio ponderado de 3 parciales",
+      "entrada": {
+        "estudiantes": [
+          {
+            "num_cuenta": "600001",
+            "apellidos": "Ramírez Soto",
+            "nombre": "Luis",
+            "grupo": "301"
+          }
+        ],
+        "cursos": [
+          {
+            "id": "C91",
+            "asignatura": "Asignatura de prueba CP-01",
+            "grupo": "301"
+          }
+        ],
+        "parciales": [
+          {
+            "id": "P71",
+            "curso_id": "C91",
+            "numero": 1,
+            "peso": 0.5
+          },
+          {
+            "id": "P72",
+            "curso_id": "C91",
+            "numero": 2,
+            "peso": 0.3
+          },
+          {
+            "id": "P73",
+            "curso_id": "C91",
+            "numero": 3,
+            "peso": 0.2
+          }
+        ],
+        "evaluaciones": [
+          {
+            "id": "EV71",
+            "parcial_id": "P71",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          },
+          {
+            "id": "EV72",
+            "parcial_id": "P72",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          },
+          {
+            "id": "EV73",
+            "parcial_id": "P73",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          }
+        ],
+        "inscripciones": [
+          {
+            "num_cuenta": "600001",
+            "curso_id": "C91"
+          }
+        ],
+        "calificaciones": [
+          {
+            "num_cuenta": "600001",
+            "evaluacion_id": "EV71",
+            "valor": 8.1
+          },
+          {
+            "num_cuenta": "600001",
+            "evaluacion_id": "EV72",
+            "valor": 8.0
+          },
+          {
+            "num_cuenta": "600001",
+            "evaluacion_id": "EV73",
+            "valor": 7.5
+          }
+        ]
+      },
+      "esperado": {
+        "num_cuenta": "600001",
+        "curso_id": "C91",
+        "parciales": [
+          8.1,
+          8.0,
+          7.5
+        ],
+        "promedio": 7.95,
+        "estatus": "APROBADO",
+        "errores": []
+      }
+    },
+    {
+      "id": "CP-02",
+      "descripcion": "Límite exacto de aprobación",
+      "entrada": {
+        "estudiantes": [
+          {
+            "num_cuenta": "600001",
+            "apellidos": "Ramírez Soto",
+            "nombre": "Luis",
+            "grupo": "301"
+          }
+        ],
+        "cursos": [
+          {
+            "id": "C92",
+            "asignatura": "Asignatura de prueba CP-02",
+            "grupo": "301"
+          }
+        ],
+        "parciales": [
+          {
+            "id": "P74",
+            "curso_id": "C92",
+            "numero": 1,
+            "peso": 0.25
+          },
+          {
+            "id": "P75",
+            "curso_id": "C92",
+            "numero": 2,
+            "peso": 0.5
+          },
+          {
+            "id": "P76",
+            "curso_id": "C92",
+            "numero": 3,
+            "peso": 0.25
+          }
+        ],
+        "evaluaciones": [
+          {
+            "id": "EV74",
+            "parcial_id": "P74",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          },
+          {
+            "id": "EV75",
+            "parcial_id": "P75",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          },
+          {
+            "id": "EV76",
+            "parcial_id": "P76",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          }
+        ],
+        "inscripciones": [
+          {
+            "num_cuenta": "600001",
+            "curso_id": "C92"
+          }
+        ],
+        "calificaciones": [
+          {
+            "num_cuenta": "600001",
+            "evaluacion_id": "EV74",
+            "valor": 6.0
+          },
+          {
+            "num_cuenta": "600001",
+            "evaluacion_id": "EV75",
+            "valor": 7.0
+          },
+          {
+            "num_cuenta": "600001",
+            "evaluacion_id": "EV76",
+            "valor": 8.0
+          }
+        ]
+      },
+      "esperado": {
+        "num_cuenta": "600001",
+        "curso_id": "C92",
+        "parciales": [
+          6.0,
+          7.0,
+          8.0
+        ],
+        "promedio": 7.0,
+        "estatus": "APROBADO",
+        "errores": []
+      }
+    },
+    {
+      "id": "CP-03",
+      "descripcion": "Reprobación por debajo de 7.0",
+      "entrada": {
+        "estudiantes": [
+          {
+            "num_cuenta": "600001",
+            "apellidos": "Ramírez Soto",
+            "nombre": "Luis",
+            "grupo": "301"
+          }
+        ],
+        "cursos": [
+          {
+            "id": "C93",
+            "asignatura": "Asignatura de prueba CP-03",
+            "grupo": "301"
+          }
+        ],
+        "parciales": [
+          {
+            "id": "P77",
+            "curso_id": "C93",
+            "numero": 1,
+            "peso": 0.5
+          },
+          {
+            "id": "P78",
+            "curso_id": "C93",
+            "numero": 2,
+            "peso": 0.4
+          },
+          {
+            "id": "P79",
+            "curso_id": "C93",
+            "numero": 3,
+            "peso": 0.1
+          }
+        ],
+        "evaluaciones": [
+          {
+            "id": "EV77",
+            "parcial_id": "P77",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          },
+          {
+            "id": "EV78",
+            "parcial_id": "P78",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          },
+          {
+            "id": "EV79",
+            "parcial_id": "P79",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          }
+        ],
+        "inscripciones": [
+          {
+            "num_cuenta": "600001",
+            "curso_id": "C93"
+          }
+        ],
+        "calificaciones": [
+          {
+            "num_cuenta": "600001",
+            "evaluacion_id": "EV77",
+            "valor": 7.0
+          },
+          {
+            "num_cuenta": "600001",
+            "evaluacion_id": "EV78",
+            "valor": 7.0
+          },
+          {
+            "num_cuenta": "600001",
+            "evaluacion_id": "EV79",
+            "valor": 6.9
+          }
+        ]
+      },
+      "esperado": {
+        "num_cuenta": "600001",
+        "curso_id": "C93",
+        "parciales": [
+          7.0,
+          7.0,
+          6.9
+        ],
+        "promedio": 6.99,
+        "estatus": "REPROBADO",
+        "riesgo": "ALTO",
+        "errores": []
+      }
+    },
+    {
+      "id": "CP-04",
+      "descripcion": "Estadísticas de un curso",
+      "entrada": {
+        "estudiantes": [
+          {
+            "num_cuenta": "600001",
+            "apellidos": "Ramírez Soto",
+            "nombre": "Luis",
+            "grupo": "301"
+          },
+          {
+            "num_cuenta": "600002",
+            "apellidos": "Ortega Vega",
+            "nombre": "Marta",
+            "grupo": "301"
+          },
+          {
+            "num_cuenta": "600003",
+            "apellidos": "Navarro Gil",
+            "nombre": "Pablo",
+            "grupo": "301"
+          }
+        ],
+        "cursos": [
+          {
+            "id": "C94",
+            "asignatura": "Asignatura de prueba CP-04",
+            "grupo": "301"
+          }
+        ],
+        "parciales": [
+          {
+            "id": "P80",
+            "curso_id": "C94",
+            "numero": 1,
+            "peso": 0.3
+          },
+          {
+            "id": "P81",
+            "curso_id": "C94",
+            "numero": 2,
+            "peso": 0.3
+          },
+          {
+            "id": "P82",
+            "curso_id": "C94",
+            "numero": 3,
+            "peso": 0.4
+          }
+        ],
+        "evaluaciones": [
+          {
+            "id": "EV80",
+            "parcial_id": "P80",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          },
+          {
+            "id": "EV82",
+            "parcial_id": "P81",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          },
+          {
+            "id": "EV83",
+            "parcial_id": "P82",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          }
+        ],
+        "inscripciones": [
+          {
+            "num_cuenta": "600001",
+            "curso_id": "C94"
+          },
+          {
+            "num_cuenta": "600002",
+            "curso_id": "C94"
+          },
+          {
+            "num_cuenta": "600003",
+            "curso_id": "C94"
+          }
+        ],
+        "calificaciones": [
+          {
+            "num_cuenta": "600001",
+            "evaluacion_id": "EV80",
+            "valor": 9.0
+          },
+          {
+            "num_cuenta": "600001",
+            "evaluacion_id": "EV82",
+            "valor": 9.0
+          },
+          {
+            "num_cuenta": "600001",
+            "evaluacion_id": "EV83",
+            "valor": 9.0
+          },
+          {
+            "num_cuenta": "600002",
+            "evaluacion_id": "EV80",
+            "valor": 7.0
+          },
+          {
+            "num_cuenta": "600002",
+            "evaluacion_id": "EV82",
+            "valor": 7.0
+          },
+          {
+            "num_cuenta": "600002",
+            "evaluacion_id": "EV83",
+            "valor": 7.0
+          },
+          {
+            "num_cuenta": "600003",
+            "evaluacion_id": "EV80",
+            "valor": 6.0
+          },
+          {
+            "num_cuenta": "600003",
+            "evaluacion_id": "EV82",
+            "valor": 6.0
+          },
+          {
+            "num_cuenta": "600003",
+            "evaluacion_id": "EV83",
+            "valor": 6.0
+          }
+        ]
+      },
+      "esperado": {
+        "curso_id": "C94",
+        "promedios": {
+          "600001": 9.0,
+          "600002": 7.0,
+          "600003": 6.0
+        },
+        "promedio": 7.33,
+        "maximo": 9.0,
+        "minimo": 6.0,
+        "aprobados": 2,
+        "reprobados": 1,
+        "porcentaje_aprobacion": 66.67,
+        "errores": []
+      }
+    },
+    {
+      "id": "CP-05",
+      "descripcion": "Calificación fuera de rango",
+      "entrada": {
+        "estudiantes": [
+          {
+            "num_cuenta": "600001",
+            "apellidos": "Ramírez Soto",
+            "nombre": "Luis",
+            "grupo": "301"
+          }
+        ],
+        "cursos": [
+          {
+            "id": "C95",
+            "asignatura": "Asignatura de prueba CP-05",
+            "grupo": "301"
+          }
+        ],
+        "parciales": [
+          {
+            "id": "P83",
+            "curso_id": "C95",
+            "numero": 1,
+            "peso": 0.3
+          },
+          {
+            "id": "P84",
+            "curso_id": "C95",
+            "numero": 2,
+            "peso": 0.3
+          },
+          {
+            "id": "P85",
+            "curso_id": "C95",
+            "numero": 3,
+            "peso": 0.4
+          }
+        ],
+        "evaluaciones": [
+          {
+            "id": "EV81",
+            "parcial_id": "P83",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          },
+          {
+            "id": "EV84",
+            "parcial_id": "P84",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          },
+          {
+            "id": "EV85",
+            "parcial_id": "P85",
+            "nombre": "Evaluación única",
+            "peso": 1.0
+          }
+        ],
+        "inscripciones": [
+          {
+            "num_cuenta": "600001",
+            "curso_id": "C95"
+          }
+        ],
+        "calificaciones": [
+          {
+            "num_cuenta": "600001",
+            "evaluacion_id": "EV81",
+            "valor": 11
+          }
+        ]
+      },
+      "esperado": {
+        "calificaciones_guardadas": 0,
+        "errores": [
+          {
+            "codigo": "CALIFICACION_FUERA_DE_RANGO",
+            "registro": {
+              "num_cuenta": "600001",
+              "evaluacion_id": "EV81",
+              "valor": 11
+            }
+          }
+        ],
+        "procesamiento_continua": true
+      }
+    }
+  ]
+}

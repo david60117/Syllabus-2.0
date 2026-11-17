@@ -1,0 +1,443 @@
+{
+  "descripcion": "Los registros se procesan en orden. Cada registro inválido se rechaza, se agrega a la lista de errores y el procesamiento continúa. Si se rechaza la configuración de parciales de un curso, sus parciales se descartan.",
+  "estudiantes": [
+    {
+      "num_cuenta": "545049",
+      "apellidos": "Torres Medina",
+      "nombre": "Sofía",
+      "grupo": "301"
+    },
+    {
+      "num_cuenta": "545052",
+      "apellidos": "Luna Díaz",
+      "nombre": "Marta",
+      "grupo": "302"
+    },
+    {
+      "caso": "INV-05",
+      "num_cuenta": "545049",
+      "apellidos": "Torres Medina",
+      "nombre": "Sofía",
+      "grupo": "301"
+    },
+    {
+      "caso": "INV-06",
+      "num_cuenta": "545050",
+      "apellidos": "Ríos Luna",
+      "grupo": "301"
+    },
+    {
+      "caso": "INV-08",
+      "num_cuenta": "1234567",
+      "apellidos": "Cruz Pardo",
+      "nombre": "Iván",
+      "grupo": "301"
+    },
+    {
+      "caso": "INV-09",
+      "num_cuenta": "12M456",
+      "apellidos": "Cruz Pardo",
+      "nombre": "Iván",
+      "grupo": "301"
+    },
+    {
+      "caso": "INV-10",
+      "num_cuenta": "123@56",
+      "apellidos": "Cruz Pardo",
+      "nombre": "Iván",
+      "grupo": "301"
+    },
+    {
+      "caso": "INV-11",
+      "num_cuenta": "545051",
+      "apellidos": "Salas Mora",
+      "nombre": "Malkih6164",
+      "grupo": "301"
+    }
+  ],
+  "cursos": [
+    {
+      "id": "C01",
+      "asignatura": "Bases de Datos",
+      "grupo": "301"
+    },
+    {
+      "caso": "INV-17",
+      "id": "C02",
+      "asignatura": "Redes",
+      "grupo": "399"
+    },
+    {
+      "caso": "INV-22",
+      "id": "C03",
+      "asignatura": "Cálculo",
+      "grupo": "301"
+    },
+    {
+      "id": "C04",
+      "asignatura": "Programación",
+      "grupo": "301"
+    },
+    {
+      "id": "C05",
+      "asignatura": "Redes",
+      "grupo": "302"
+    }
+  ],
+  "parciales": [
+    {
+      "id": "P01",
+      "curso_id": "C01",
+      "numero": 1,
+      "peso": 0.3
+    },
+    {
+      "id": "P02",
+      "curso_id": "C01",
+      "numero": 2,
+      "peso": 0.3
+    },
+    {
+      "id": "P03",
+      "curso_id": "C01",
+      "numero": 3,
+      "peso": 0.4
+    },
+    {
+      "caso": "INV-22",
+      "id": "P04",
+      "curso_id": "C03",
+      "numero": 1,
+      "peso": 0.5
+    },
+    {
+      "caso": "INV-22",
+      "id": "P05",
+      "curso_id": "C03",
+      "numero": 2,
+      "peso": 0.3
+    },
+    {
+      "caso": "INV-22",
+      "id": "P06",
+      "curso_id": "C03",
+      "numero": 3,
+      "peso": 0.3
+    },
+    {
+      "id": "P07",
+      "curso_id": "C04",
+      "numero": 1,
+      "peso": 0.3
+    },
+    {
+      "id": "P08",
+      "curso_id": "C04",
+      "numero": 2,
+      "peso": 0.3
+    },
+    {
+      "id": "P09",
+      "curso_id": "C04",
+      "numero": 3,
+      "peso": 0.4
+    },
+    {
+      "id": "P10",
+      "curso_id": "C05",
+      "numero": 1,
+      "peso": 0.3
+    },
+    {
+      "id": "P11",
+      "curso_id": "C05",
+      "numero": 2,
+      "peso": 0.3
+    },
+    {
+      "id": "P12",
+      "curso_id": "C05",
+      "numero": 3,
+      "peso": 0.4
+    }
+  ],
+  "evaluaciones": [
+    {
+      "id": "EV01",
+      "parcial_id": "P01",
+      "nombre": "Examen",
+      "peso": 1.0
+    },
+    {
+      "id": "EV02",
+      "parcial_id": "P02",
+      "nombre": "Examen",
+      "peso": 1.0
+    },
+    {
+      "id": "EV03",
+      "parcial_id": "P03",
+      "nombre": "Examen",
+      "peso": 0.6
+    },
+    {
+      "id": "EV04",
+      "parcial_id": "P03",
+      "nombre": "Proyecto",
+      "peso": 0.4
+    },
+    {
+      "caso": "INV-03",
+      "id": "EV10",
+      "parcial_id": "P07",
+      "nombre": "Examen",
+      "peso": 0.4
+    },
+    {
+      "caso": "INV-03",
+      "id": "EV11",
+      "parcial_id": "P07",
+      "nombre": "Tareas",
+      "peso": 0.3
+    },
+    {
+      "caso": "INV-16",
+      "id": "EV12",
+      "parcial_id": "P08",
+      "nombre": "Examen",
+      "peso": 0.8
+    },
+    {
+      "caso": "INV-16",
+      "id": "EV13",
+      "parcial_id": "P08",
+      "nombre": "Tareas",
+      "peso": 0.6
+    },
+    {
+      "id": "EV14",
+      "parcial_id": "P09",
+      "nombre": "Examen",
+      "peso": 1.0
+    },
+    {
+      "id": "EV15",
+      "parcial_id": "P10",
+      "nombre": "Examen",
+      "peso": 1.0
+    },
+    {
+      "id": "EV16",
+      "parcial_id": "P11",
+      "nombre": "Examen",
+      "peso": 1.0
+    },
+    {
+      "id": "EV17",
+      "parcial_id": "P12",
+      "nombre": "Examen",
+      "peso": 1.0
+    }
+  ],
+  "inscripciones": [
+    {
+      "num_cuenta": "545049",
+      "curso_id": "C01"
+    },
+    {
+      "caso": "INV-04",
+      "num_cuenta": "959673",
+      "curso_id": "C01"
+    },
+    {
+      "caso": "INV-12",
+      "num_cuenta": "545049",
+      "curso_id": "C77"
+    },
+    {
+      "caso": "INV-13",
+      "num_cuenta": "545049",
+      "curso_id": "C01"
+    },
+    {
+      "caso": "INV-23",
+      "num_cuenta": "545049",
+      "curso_id": "C05"
+    }
+  ],
+  "calificaciones": [
+    {
+      "num_cuenta": "545049",
+      "evaluacion_id": "EV01",
+      "valor": 8.0
+    },
+    {
+      "caso": "INV-01",
+      "num_cuenta": "545049",
+      "evaluacion_id": "EV02",
+      "valor": 67
+    },
+    {
+      "caso": "INV-02",
+      "num_cuenta": "545049",
+      "evaluacion_id": "EV02",
+      "valor": -5
+    },
+    {
+      "caso": "INV-07",
+      "num_cuenta": "545049",
+      "evaluacion_id": "EV02",
+      "valor": "nueve"
+    },
+    {
+      "caso": "INV-14",
+      "num_cuenta": "545049",
+      "evaluacion_id": "EV99",
+      "valor": 8.0
+    },
+    {
+      "caso": "INV-15",
+      "num_cuenta": "545049",
+      "evaluacion_id": "EV03",
+      "valor": null
+    },
+    {
+      "num_cuenta": "545049",
+      "evaluacion_id": "EV02",
+      "valor": 9.0
+    },
+    {
+      "num_cuenta": "545049",
+      "evaluacion_id": "EV03",
+      "valor": 7.5
+    },
+    {
+      "num_cuenta": "545049",
+      "evaluacion_id": "EV04",
+      "valor": 9.0
+    }
+  ],
+  "operaciones": [
+    {
+      "caso": "INV-20",
+      "tipo": "modificar_calificacion",
+      "num_cuenta": "545049",
+      "evaluacion_id": "EV01",
+      "valor": 20
+    },
+    {
+      "caso": "INV-21",
+      "tipo": "consultar_kardex",
+      "num_cuenta": "999999"
+    }
+  ],
+  "errores_esperados": [
+    {
+      "caso": "INV-01",
+      "codigo": "CALIFICACION_FUERA_DE_RANGO"
+    },
+    {
+      "caso": "INV-02",
+      "codigo": "CALIFICACION_FUERA_DE_RANGO"
+    },
+    {
+      "caso": "INV-03",
+      "codigo": "PORCENTAJES_INVALIDOS",
+      "nota": "Evaluaciones del parcial P07 suman 0.7"
+    },
+    {
+      "caso": "INV-04",
+      "codigo": "REFERENCIA_INEXISTENTE"
+    },
+    {
+      "caso": "INV-05",
+      "codigo": "ID_DUPLICADO"
+    },
+    {
+      "caso": "INV-06",
+      "codigo": "CAMPO_FALTANTE"
+    },
+    {
+      "caso": "INV-07",
+      "codigo": "TIPO_INVALIDO"
+    },
+    {
+      "caso": "INV-08",
+      "codigo": "FORMATO_INVALIDO"
+    },
+    {
+      "caso": "INV-09",
+      "codigo": "FORMATO_INVALIDO"
+    },
+    {
+      "caso": "INV-10",
+      "codigo": "FORMATO_INVALIDO"
+    },
+    {
+      "caso": "INV-11",
+      "codigo": "FORMATO_INVALIDO"
+    },
+    {
+      "caso": "INV-12",
+      "codigo": "REFERENCIA_INEXISTENTE"
+    },
+    {
+      "caso": "INV-13",
+      "codigo": "INSCRIPCION_DUPLICADA"
+    },
+    {
+      "caso": "INV-14",
+      "codigo": "REFERENCIA_INEXISTENTE"
+    },
+    {
+      "caso": "INV-15",
+      "codigo": "CAMPO_FALTANTE"
+    },
+    {
+      "caso": "INV-16",
+      "codigo": "PORCENTAJES_INVALIDOS",
+      "nota": "Evaluaciones del parcial P08 suman 1.4"
+    },
+    {
+      "caso": "INV-17",
+      "codigo": "REFERENCIA_INEXISTENTE",
+      "nota": "El grupo 399 no tiene ningún estudiante registrado"
+    },
+    {
+      "caso": "INV-20",
+      "codigo": "CALIFICACION_FUERA_DE_RANGO"
+    },
+    {
+      "caso": "INV-21",
+      "codigo": "REFERENCIA_INEXISTENTE"
+    },
+    {
+      "caso": "INV-22",
+      "codigo": "PORCENTAJES_INVALIDOS",
+      "nota": "Parciales del curso C03 suman 1.1"
+    },
+    {
+      "caso": "INV-23",
+      "codigo": "REFERENCIA_INEXISTENTE",
+      "nota": "El curso C05 es del grupo 302 y el estudiante 545049 es del grupo 301"
+    }
+  ],
+  "validos_esperados": [
+    {
+      "caso": "VAL-01",
+      "num_cuenta": "545049",
+      "promedio_C01": 8.34,
+      "nota": "Se acepta y su promedio se calcula aunque haya errores antes y después"
+    }
+  ],
+  "fuera_de_alcance": [
+    {
+      "caso": "INV-18",
+      "motivo": "El sistema no tiene inicio de sesión"
+    },
+    {
+      "caso": "INV-19",
+      "motivo": "El sistema no importa archivos CSV"
+    }
+  ]
+}
