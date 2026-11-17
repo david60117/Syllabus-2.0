@@ -29,8 +29,16 @@ CONTRIBUCIONES.md responsabilidad individual de cada integrante y flujo de traba
 
 ## Comparativo visual
 
+Windows (PowerShell o CMD):
+
+```powershell
+py comparativo\medir.py --rapido          # o sin --rapido para incluir 20 000 estudiantes y 3 repeticiones
+```
+
+macOS:
+
 ```bash
-python comparativo/medir.py --rapido      # o sin --rapido para incluir 20 000 estudiantes y 3 repeticiones
+python3 comparativo/medir.py --rapido      # o sin --rapido para incluir 20 000 estudiantes y 3 repeticiones
 ```
 
 Ejecuta las tres versiones con los mismos datos, en modo secuencial y concurrente, comprueba que los 13 reportes
@@ -39,7 +47,7 @@ los resultados de cada versión, tiempos por volumen, secuencial vs concurrente,
 percibida, ventajas y limitaciones, y una tabla interactiva con la clasificación de los lenguajes.
 
 `datos/generar.py` vuelve a crear `solicitudes_pequenas.json` (12 estudiantes), `solicitudes_medias.json` (1 000)
-y `solicitudes_grandes.json` (20 000): `python3 datos/generar.py`.
+y `solicitudes_grandes.json` (20 000): `py datos\generar.py` en Windows o `python3 datos/generar.py` en macOS.
 
 ## Cómo ejecutar
 
@@ -84,16 +92,39 @@ sea la inicial; una contraseña elegida por el usuario se guarda cifrada (SHA-25
 
 ### Python (3.10 o superior, con Tkinter)
 
+Windows (PowerShell o CMD; el instalador de python.org ya incluye Tkinter):
+
+```powershell
+cd python
+py -m src.main                                       # interfaz gráfica
+py -m src.main --cli --entrada ..\datos\solicitudes_medias.json --salida reportes --modo concurrente
+py -m unittest discover -s tests -t .                # pruebas
+```
+
+macOS (si Tkinter falta con Homebrew: `brew install python-tk`):
+
 ```bash
 cd python
-python -m src.main                                   # interfaz gráfica
-python -m src.main --cli --entrada ../datos/solicitudes_medias.json --salida reportes --modo concurrente
-python -m unittest discover -s tests -t .            # pruebas
+python3 -m src.main                                  # interfaz gráfica
+python3 -m src.main --cli --entrada ../datos/solicitudes_medias.json --salida reportes --modo concurrente
+python3 -m unittest discover -s tests -t .           # pruebas
 ```
 
 ### JavaScript (Node 18 o superior; sin dependencias)
 
-Si la terminal dice `command not found: npm`, primero instala Node.js (`brew install node` o nodejs.org).
+Si la terminal no reconoce `npm`, primero instala Node.js: en Windows con el instalador de nodejs.org
+(o `winget install OpenJS.NodeJS.LTS`) y en macOS con `brew install node`.
+
+Windows (PowerShell o CMD):
+
+```powershell
+cd javascript
+npm start                                             # abre http://localhost:3000
+node src\main.js --cli --entrada ..\datos\solicitudes_medias.json --salida reportes --modo concurrente
+npm test                                              # pruebas (node:test)
+```
+
+macOS:
 
 ```bash
 cd javascript
@@ -104,6 +135,21 @@ npm test                                              # pruebas (node:test)
 
 ### Java (JDK 17 o superior; Maven para las pruebas)
 
+Si la terminal no reconoce `java` o `mvn`: en Windows instala el JDK (`winget install Microsoft.OpenJDK.17`) y
+Maven desde maven.apache.org (agrega su carpeta `bin` al `PATH`); en macOS, `brew install openjdk@17 maven`.
+
+Windows (PowerShell; en PowerShell el argumento `-Dexec.args=...` va entre comillas completo):
+
+```powershell
+cd java
+mvn compile exec:java                                 # interfaz gráfica
+mvn compile exec:java "-Dexec.args=--cli --entrada ..\datos\solicitudes_medias.json --salida reportes --modo concurrente"
+mvn test                                              # pruebas (JUnit 5)
+mvn package; java -jar target\syllabus.jar            # jar ejecutable
+```
+
+macOS:
+
 ```bash
 cd java
 mvn compile exec:java                                 # interfaz gráfica
@@ -112,7 +158,17 @@ mvn test                                              # pruebas (JUnit 5)
 mvn package && java -jar target/syllabus.jar          # jar ejecutable
 ```
 
-Sin Maven también compila con el JDK:
+Sin Maven también compila con el JDK.
+
+Windows (PowerShell):
+
+```powershell
+javac -encoding UTF-8 -d out (Get-ChildItem -Recurse src -Filter *.java).FullName
+Copy-Item src\mx\uaeh\syllabus\ui\iconos.ttf out\mx\uaeh\syllabus\ui\
+java -cp out mx.uaeh.syllabus.Main
+```
+
+macOS:
 
 ```bash
 javac -encoding UTF-8 -d out $(find src -name '*.java') && cp src/mx/uaeh/syllabus/ui/iconos.ttf out/mx/uaeh/syllabus/ui/
