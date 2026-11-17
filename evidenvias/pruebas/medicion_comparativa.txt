@@ -1,0 +1,27 @@
+Compilando la versión Java…
+  pequenas  secuencial   python     cálculo       0.61 ms   total      80.4 ms
+  pequenas  secuencial   javascript cálculo       1.25 ms   total      48.3 ms
+  pequenas  secuencial   java       cálculo      15.89 ms   total     290.5 ms
+  → reportes idénticos entre lenguajes: sí
+  pequenas  concurrente  python     cálculo      10.52 ms   total      98.3 ms
+  pequenas  concurrente  javascript cálculo      44.99 ms   total      92.6 ms
+  pequenas  concurrente  java       cálculo      34.94 ms   total     332.2 ms
+  → reportes idénticos entre lenguajes: sí
+  medias    secuencial   python     cálculo      62.16 ms   total     755.5 ms
+  medias    secuencial   javascript cálculo      86.02 ms   total     461.4 ms
+  medias    secuencial   java       cálculo     172.36 ms   total    1573.0 ms
+  → reportes idénticos entre lenguajes: sí
+  medias    concurrente  python     cálculo     132.44 ms   total     841.4 ms
+  medias    concurrente  javascript cálculo     235.02 ms   total     632.5 ms
+  medias    concurrente  java       cálculo     201.23 ms   total    1645.4 ms
+  → reportes idénticos entre lenguajes: sí
+  grandes   secuencial   python     cálculo    1345.72 ms   total   12206.5 ms
+  grandes   secuencial   javascript cálculo     819.53 ms   total    6296.1 ms
+  grandes   secuencial   java       cálculo     756.08 ms   total    8661.8 ms
+  → reportes idénticos entre lenguajes: sí
+  grandes   concurrente  python     cálculo    2670.15 ms   total   14129.1 ms
+  grandes   concurrente  javascript cálculo    2847.03 ms   total    8399.6 ms
+  grandes   concurrente  java       cálculo     842.17 ms   total    9004.7 ms
+  → reportes idénticos entre lenguajes: sí
+Contando líneas y corriendo pruebas…
+Listo: comparativo/resultados.json y comparativo/resultados.js (abre comparativo/tablero.html)

@@ -1,0 +1,413 @@
+{
+  "generado": "2026-11-16 18:30",
+  "equipo": {
+    "sistema": "Linux 6.18.44-fc-v509 (x86_64)",
+    "nucleos": 2,
+    "python": "3.13.18",
+    "node": "v22.23.4",
+    "java": "openjdk version \"21.0.12.1\" 2026-08-18"
+  },
+  "repeticiones": 3,
+  "datos": {
+    "pequenas": {
+      "estudiantes": 12,
+      "cursos": 6,
+      "parciales": 18,
+      "evaluaciones": 57,
+      "inscripciones": 36,
+      "calificaciones": 342,
+      "docentes": 2,
+      "asignaciones": 6
+    },
+    "medias": {
+      "estudiantes": 1000,
+      "cursos": 20,
+      "parciales": 60,
+      "evaluaciones": 172,
+      "inscripciones": 4000,
+      "calificaciones": 34400,
+      "docentes": 6,
+      "asignaciones": 20
+    },
+    "grandes": {
+      "estudiantes": 20000,
+      "cursos": 60,
+      "parciales": 180,
+      "evaluaciones": 548,
+      "inscripciones": 60000,
+      "calificaciones": 548000,
+      "docentes": 20,
+      "asignaciones": 60
+    }
+  },
+  "tiempos": {
+    "python": {
+      "pequenas": {
+        "secuencial": {
+          "calculo_ms": 0.61,
+          "total_ms": 80.4
+        },
+        "concurrente": {
+          "calculo_ms": 10.52,
+          "total_ms": 98.3
+        }
+      },
+      "medias": {
+        "secuencial": {
+          "calculo_ms": 62.16,
+          "total_ms": 755.5
+        },
+        "concurrente": {
+          "calculo_ms": 132.44,
+          "total_ms": 841.4
+        }
+      },
+      "grandes": {
+        "secuencial": {
+          "calculo_ms": 1345.72,
+          "total_ms": 12206.5
+        },
+        "concurrente": {
+          "calculo_ms": 2670.15,
+          "total_ms": 14129.1
+        }
+      }
+    },
+    "javascript": {
+      "pequenas": {
+        "secuencial": {
+          "calculo_ms": 1.25,
+          "total_ms": 48.3
+        },
+        "concurrente": {
+          "calculo_ms": 44.99,
+          "total_ms": 92.6
+        }
+      },
+      "medias": {
+        "secuencial": {
+          "calculo_ms": 86.02,
+          "total_ms": 461.4
+        },
+        "concurrente": {
+          "calculo_ms": 235.02,
+          "total_ms": 632.5
+        }
+      },
+      "grandes": {
+        "secuencial": {
+          "calculo_ms": 819.53,
+          "total_ms": 6296.1
+        },
+        "concurrente": {
+          "calculo_ms": 2847.03,
+          "total_ms": 8399.6
+        }
+      }
+    },
+    "java": {
+      "pequenas": {
+        "secuencial": {
+          "calculo_ms": 15.89,
+          "total_ms": 290.5
+        },
+        "concurrente": {
+          "calculo_ms": 34.94,
+          "total_ms": 332.2
+        }
+      },
+      "medias": {
+        "secuencial": {
+          "calculo_ms": 172.36,
+          "total_ms": 1573.0
+        },
+        "concurrente": {
+          "calculo_ms": 201.23,
+          "total_ms": 1645.4
+        }
+      },
+      "grandes": {
+        "secuencial": {
+          "calculo_ms": 756.08,
+          "total_ms": 8661.8
+        },
+        "concurrente": {
+          "calculo_ms": 842.17,
+          "total_ms": 9004.7
+        }
+      }
+    }
+  },
+  "paridad": {
+    "pequenas/secuencial": {
+      "reportes": 13,
+      "identicos": true
+    },
+    "pequenas/concurrente": {
+      "reportes": 13,
+      "identicos": true
+    },
+    "medias/secuencial": {
+      "reportes": 13,
+      "identicos": true
+    },
+    "medias/concurrente": {
+      "reportes": 13,
+      "identicos": true
+    },
+    "grandes/secuencial": {
+      "reportes": 13,
+      "identicos": true
+    },
+    "grandes/concurrente": {
+      "reportes": 13,
+      "identicos": true
+    }
+  },
+  "resultados": {
+    "pequenas": {
+      "python": {
+        "estudiantes": 12,
+        "promedio_general": 7.34,
+        "aprobados": 8,
+        "reprobados": 4,
+        "riesgo_alto": 5,
+        "riesgo_medio": 1,
+        "rechazados": 0
+      },
+      "javascript": {
+        "estudiantes": 12,
+        "promedio_general": 7.34,
+        "aprobados": 8,
+        "reprobados": 4,
+        "riesgo_alto": 5,
+        "riesgo_medio": 1,
+        "rechazados": 0
+      },
+      "java": {
+        "estudiantes": 12,
+        "promedio_general": 7.34,
+        "aprobados": 8,
+        "reprobados": 4,
+        "riesgo_alto": 5,
+        "riesgo_medio": 1,
+        "rechazados": 0
+      }
+    },
+    "medias": {
+      "python": {
+        "estudiantes": 1000,
+        "promedio_general": 7.46,
+        "aprobados": 613,
+        "reprobados": 387,
+        "riesgo_alto": 477,
+        "riesgo_medio": 29,
+        "rechazados": 0
+      },
+      "javascript": {
+        "estudiantes": 1000,
+        "promedio_general": 7.46,
+        "aprobados": 613,
+        "reprobados": 387,
+        "riesgo_alto": 477,
+        "riesgo_medio": 29,
+        "rechazados": 0
+      },
+      "java": {
+        "estudiantes": 1000,
+        "promedio_general": 7.46,
+        "aprobados": 613,
+        "reprobados": 387,
+        "riesgo_alto": 477,
+        "riesgo_medio": 29,
+        "rechazados": 0
+      }
+    },
+    "grandes": {
+      "python": {
+        "estudiantes": 20000,
+        "promedio_general": 7.44,
+        "aprobados": 12070,
+        "reprobados": 7930,
+        "riesgo_alto": 9485,
+        "riesgo_medio": 692,
+        "rechazados": 0
+      },
+      "javascript": {
+        "estudiantes": 20000,
+        "promedio_general": 7.44,
+        "aprobados": 12070,
+        "reprobados": 7930,
+        "riesgo_alto": 9485,
+        "riesgo_medio": 692,
+        "rechazados": 0
+      },
+      "java": {
+        "estudiantes": 20000,
+        "promedio_general": 7.44,
+        "aprobados": 12070,
+        "reprobados": 7930,
+        "riesgo_alto": 9485,
+        "riesgo_medio": 692,
+        "rechazados": 0
+      }
+    }
+  },
+  "lineas": {
+    "python": {
+      "codigo": 3987,
+      "archivos_codigo": 18,
+      "pruebas": 453,
+      "archivos_pruebas": 7,
+      "interfaz": 2436,
+      "nucleo": 1551
+    },
+    "javascript": {
+      "codigo": 3262,
+      "archivos_codigo": 22,
+      "pruebas": 352,
+      "archivos_pruebas": 6,
+      "interfaz": 1666,
+      "nucleo": 1596
+    },
+    "java": {
+      "codigo": 7039,
+      "archivos_codigo": 52,
+      "pruebas": 562,
+      "archivos_pruebas": 6,
+      "interfaz": 3974,
+      "nucleo": 3065
+    }
+  },
+  "pruebas": {
+    "python": {
+      "pruebas": 51,
+      "ok": true
+    },
+    "javascript": {
+      "pruebas": 46,
+      "ok": true
+    },
+    "java": {
+      "pruebas": 40,
+      "ok": null
+    }
+  },
+  "valoracion": {
+    "_nota": "Valoración del equipo (1 = muy fácil, 5 = muy difícil). Es una propuesta: ajústenla con su experiencia antes de entregar y vuelvan a correr medir.py.",
+    "criterios": [
+      "Modelado de datos",
+      "Validación y errores",
+      "Cálculos y redondeo",
+      "Concurrencia",
+      "Interfaz",
+      "Reportes y PDF",
+      "Pruebas"
+    ],
+    "lenguajes": {
+      "python": {
+        "nombre": "Python",
+        "paradigma": "Orientado a eventos",
+        "dificultad": [
+          1,
+          2,
+          2,
+          3,
+          4,
+          3,
+          1
+        ],
+        "ventajas": [
+          "Sintaxis breve: el núcleo es el más corto de los tres",
+          "Biblioteca estándar completa (json, csv, decimal, unittest, tkinter)",
+          "decimal.Decimal resuelve el redondeo institucional sin errores de punto flotante",
+          "Arranque rápido en la línea de comandos"
+        ],
+        "limitaciones": [
+          "El GIL obliga a usar procesos para la concurrencia; copiar los datos a cada proceso cuesta más que lo que se ahorra con pocos núcleos",
+          "Tkinter limita el diseño: íconos nítidos solo con una fuente registrada por sistema operativo",
+          "Tipado dinámico: errores de tipo se detectan hasta ejecutar (se compensa con pruebas)"
+        ],
+        "clasificacion": {
+          "abstraccion": "Alto nivel: memoria automática (recolector de basura), estructuras ricas (list, dict, set) y sin punteros.",
+          "ejecucion": "Interpretado: CPython compila el código a bytecode (.pyc) y lo ejecuta en su máquina virtual; no hay paso de compilación manual.",
+          "tipos": "Dinámico y fuerte: el tipo pertenece al valor y se revisa al ejecutar; no hay conversiones implícitas entre texto y número (\"1\" + 1 lanza TypeError). Las anotaciones (str, list[float]) son opcionales y no se verifican al ejecutar.",
+          "proposito": "Propósito general; muy usado en automatización, análisis de datos y ciencia, y también en web.",
+          "paradigma_principal": "Orientado a eventos (en este proyecto)",
+          "paradigmas_secundarios": "Orientado a objetos, funcional, imperativo y estructurado, concurrente",
+          "evidencias": "BusEventos.suscribir/emitir (eventos.py); App.al_evento reacciona a cada evento; mainloop de Tkinter con bind(\"<Button-1>\"), after() y trace_add(); clases y @dataclass (gestor.py, modelos.py); lambda y comprensiones (sorted(..., key=lambda p: p.numero)); ProcessPoolExecutor (concurrencia.py).",
+          "tipo": "Multiparadigma: imperativo, orientado a objetos, funcional, orientado a eventos, concurrente y textual."
+        }
+      },
+      "javascript": {
+        "nombre": "JavaScript",
+        "paradigma": "Declarativo",
+        "dificultad": [
+          2,
+          2,
+          3,
+          3,
+          2,
+          3,
+          2
+        ],
+        "ventajas": [
+          "La interfaz web es la más fiel al diseño y funciona en cualquier navegador",
+          "map, filter y reduce expresan reportes y filtros como transformaciones puras",
+          "V8 compila en tiempo de ejecución: buen rendimiento sin compilar a mano",
+          "Sin dependencias externas: Node trae servidor HTTP, pruebas e hilos"
+        ],
+        "limitaciones": [
+          "Number es punto flotante: el redondeo exacto requirió BigInt",
+          "Tipado dinámico y débil: conversiones implícitas que hay que validar",
+          "worker_threads copia los datos a cada hilo, lo que reduce la ganancia con volúmenes chicos"
+        ],
+        "clasificacion": {
+          "abstraccion": "Alto nivel: memoria automática, objetos y funciones de primera clase; corre en el navegador y en Node sin tocar el hardware.",
+          "ejecucion": "Interpretado con compilación JIT: V8 interpreta bytecode (Ignition) y compila a código máquina las partes más usadas (TurboFan) mientras se ejecuta.",
+          "tipos": "Dinámico y débil: los valores se convierten implícitamente (\"1\" + 1 da \"11\", \"5\" * 2 da 10), por eso todas las entradas se validan de forma explícita. Number es punto flotante; el redondeo exacto usa BigInt.",
+          "proposito": "Desarrollo web (interfaz en el navegador y servidor con Node.js); también propósito general.",
+          "paradigma_principal": "Declarativo (en este proyecto)",
+          "paradigmas_secundarios": "Funcional, orientado a eventos, asíncrono, concurrente, basado en prototipos/clases",
+          "evidencias": "Vistas como funciones del estado que devuelven HTML (web/vistas.js, mapa VISTAS); map/filter/reduce en calculos.js y documentos.js; datos inmutables con Object.freeze; eventos delegados con addEventListener (web/app.js); Promise.all + worker_threads (concurrencia.js); async/await en el servidor.",
+          "tipo": "Multiparadigma: declarativo, funcional, orientado a eventos, asíncrono, concurrente y textual."
+        }
+      },
+      "java": {
+        "nombre": "Java",
+        "paradigma": "Orientado a objetos",
+        "dificultad": [
+          3,
+          3,
+          2,
+          2,
+          4,
+          4,
+          3
+        ],
+        "ventajas": [
+          "Tipado estático: el compilador detecta errores antes de ejecutar",
+          "records, herencia y polimorfismo dan una estructura clara y mantenible",
+          "ExecutorService reparte el cálculo en hilos que comparten memoria: es la versión concurrente con menor costo adicional",
+          "La JVM optimiza en caliente: el cálculo más rápido con el volumen grande"
+        ],
+        "limitaciones": [
+          "Código más extenso (tipos, clases y métodos explícitos)",
+          "Arranque de la JVM: con datos chicos el tiempo total es mayor",
+          "Sin lector JSON en la biblioteca estándar: se escribió uno propio",
+          "Swing requiere mucho código para lograr un diseño moderno"
+        ],
+        "clasificacion": {
+          "abstraccion": "Alto nivel: memoria automática en la JVM, clases y colecciones genéricas; más explícito que Python o JavaScript.",
+          "ejecucion": "Compilado a bytecode con javac y ejecutado en la máquina virtual de Java (JVM), que lo compila a código máquina en caliente (JIT HotSpot).",
+          "tipos": "Estático y fuerte: los tipos se declaran (o se infieren con var) y el compilador los verifica antes de ejecutar; las conversiones entre tipos son explícitas. Matiz: los genéricos se borran al compilar y los cast se revisan en ejecución.",
+          "proposito": "Propósito general: sistemas empresariales, servicios, aplicaciones de escritorio y Android.",
+          "paradigma_principal": "Orientado a objetos",
+          "paradigmas_secundarios": "Imperativo, funcional (lambdas y streams), concurrente, orientado a eventos (listeners de Swing)",
+          "evidencias": "Encapsulamiento (Cuenta, GestorEscolar); herencia (GestorEscolar extends Calculadora; cada pantalla extends Vista); polimorfismo (App llama dibujar() sin saber qué Vista es); records inmutables (Estudiante, Curso, Grupo, Documento); excepción propia ErrorValidacion; observador BusEventos; ExecutorService (Concurrencia.java); streams y lambdas en Documentos.",
+          "tipo": "Orientado a objetos, imperativo, concurrente, compilado y textual."
+        }
+      }
+    }
+  }
+}
