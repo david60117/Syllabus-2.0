@@ -1,0 +1,311 @@
+{
+  "estudiantes": [
+    {
+      "num_cuenta": "500005",
+      "apellidos": "Álvarez Ruiz",
+      "nombre": "Elena",
+      "grupo": "301"
+    },
+    {
+      "num_cuenta": "500001",
+      "apellidos": "García López",
+      "nombre": "Ana",
+      "grupo": "301"
+    },
+    {
+      "num_cuenta": "500003",
+      "apellidos": "Méndez Castro",
+      "nombre": "Carla",
+      "grupo": "301"
+    },
+    {
+      "num_cuenta": "500007",
+      "apellidos": "Peña Flores",
+      "nombre": "Gloria",
+      "grupo": "301"
+    }
+  ],
+  "cursos": [
+    {
+      "id": "C01",
+      "asignatura": "Bases de Datos",
+      "grupo": "301"
+    }
+  ],
+  "parciales": [
+    {
+      "id": "P01",
+      "curso_id": "C01",
+      "numero": 1,
+      "peso": 0.3
+    },
+    {
+      "id": "P02",
+      "curso_id": "C01",
+      "numero": 2,
+      "peso": 0.3
+    },
+    {
+      "id": "P03",
+      "curso_id": "C01",
+      "numero": 3,
+      "peso": 0.4
+    }
+  ],
+  "evaluaciones": [
+    {
+      "id": "EV01",
+      "parcial_id": "P01",
+      "nombre": "Examen",
+      "peso": 0.6
+    },
+    {
+      "id": "EV02",
+      "parcial_id": "P01",
+      "nombre": "Actividades",
+      "peso": 0.2
+    },
+    {
+      "id": "EV03",
+      "parcial_id": "P01",
+      "nombre": "Tareas",
+      "peso": 0.2
+    },
+    {
+      "id": "EV04",
+      "parcial_id": "P02",
+      "nombre": "Examen",
+      "peso": 0.6
+    },
+    {
+      "id": "EV05",
+      "parcial_id": "P02",
+      "nombre": "Proyecto",
+      "peso": 0.4
+    },
+    {
+      "id": "EV06",
+      "parcial_id": "P03",
+      "nombre": "Examen",
+      "peso": 0.5
+    },
+    {
+      "id": "EV07",
+      "parcial_id": "P03",
+      "nombre": "Tareas",
+      "peso": 0.3
+    },
+    {
+      "id": "EV08",
+      "parcial_id": "P03",
+      "nombre": "Coevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV09",
+      "parcial_id": "P03",
+      "nombre": "Autoevaluación",
+      "peso": 0.1
+    }
+  ],
+  "inscripciones": [
+    {
+      "num_cuenta": "500005",
+      "curso_id": "C01"
+    },
+    {
+      "num_cuenta": "500001",
+      "curso_id": "C01"
+    },
+    {
+      "num_cuenta": "500003",
+      "curso_id": "C01"
+    },
+    {
+      "num_cuenta": "500007",
+      "curso_id": "C01"
+    }
+  ],
+  "calificaciones": [
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV01",
+      "valor": 9.0
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV02",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV03",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV04",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV05",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV06",
+      "valor": 9.5
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV07",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV08",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV09",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV01",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV02",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV03",
+      "valor": 7.0
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV04",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV05",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV06",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV07",
+      "valor": 8.5
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV08",
+      "valor": 8.5
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV09",
+      "valor": 8.5
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV01",
+      "valor": 4.0
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV02",
+      "valor": 7.0
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV03",
+      "valor": 6.0
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV04",
+      "valor": 6.0
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV05",
+      "valor": 6.0
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV06",
+      "valor": 3.5
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV07",
+      "valor": 5.0
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV08",
+      "valor": 5.0
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV09",
+      "valor": 5.0
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV01",
+      "valor": 7.0
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV02",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV03",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV04",
+      "valor": 7.0
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV05",
+      "valor": 7.0
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV06",
+      "valor": 7.0
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV07",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV08",
+      "valor": 9.0
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV09",
+      "valor": 9.0
+    }
+  ]
+}

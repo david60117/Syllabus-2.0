@@ -1,0 +1,29 @@
+{
+  "descripcion": "Usuarios de muestra. La contraseña se guarda como SHA-256 (hex); nunca en texto plano.",
+  "usuarios": [
+    {
+      "usuario": "admin",
+      "correo": "admin@syllabus.mx",
+      "contrasena_sha256": "3b612c75a7b5048a435fb6ec81e52ff92d6d795a8b5a9c17070f6a63c97a53b2",
+      "rol": "Administrador",
+      "referencia": null,
+      "nombre": "Administración escolar"
+    },
+    {
+      "usuario": "pavila",
+      "correo": "paola.avila@syllabus.mx",
+      "contrasena_sha256": "41cfb30a0c16b0ea26d7892a8a1ff486876228557448614e2825716655de5774",
+      "rol": "Docente",
+      "referencia": "D01",
+      "nombre": "Paola Ávila"
+    },
+    {
+      "usuario": "500001",
+      "correo": "500001@syllabus.mx",
+      "contrasena_sha256": "3376c84129ae157df6c4a2dc409233c4ecc08d4fa1be55e0f4ddb369fb093ee8",
+      "rol": "Alumno",
+      "referencia": "500001",
+      "nombre": "Martínez García Lucía"
+    }
+  ]
+}

@@ -1,0 +1,2456 @@
+{
+  "estudiantes": [
+    {
+      "num_cuenta": "500001",
+      "apellidos": "Martínez García",
+      "nombre": "Lucía",
+      "grupo": "301"
+    },
+    {
+      "num_cuenta": "500002",
+      "apellidos": "Peña Peña",
+      "nombre": "Gloria",
+      "grupo": "302"
+    },
+    {
+      "num_cuenta": "500003",
+      "apellidos": "Martínez Soto",
+      "nombre": "Elena",
+      "grupo": "301"
+    },
+    {
+      "num_cuenta": "500004",
+      "apellidos": "Díaz Flores",
+      "nombre": "Luis",
+      "grupo": "302"
+    },
+    {
+      "num_cuenta": "500005",
+      "apellidos": "García Hernández",
+      "nombre": "Sofía",
+      "grupo": "301"
+    },
+    {
+      "num_cuenta": "500006",
+      "apellidos": "Peña Vega",
+      "nombre": "Bruno",
+      "grupo": "302"
+    },
+    {
+      "num_cuenta": "500007",
+      "apellidos": "García Soto",
+      "nombre": "Sofía",
+      "grupo": "301"
+    },
+    {
+      "num_cuenta": "500008",
+      "apellidos": "Soto Flores",
+      "nombre": "Mateo",
+      "grupo": "302"
+    },
+    {
+      "num_cuenta": "500009",
+      "apellidos": "Ruiz Díaz",
+      "nombre": "Lucía",
+      "grupo": "301"
+    },
+    {
+      "num_cuenta": "500010",
+      "apellidos": "García Álvarez",
+      "nombre": "Jorge",
+      "grupo": "302"
+    },
+    {
+      "num_cuenta": "500011",
+      "apellidos": "Cruz Ávila",
+      "nombre": "Gloria",
+      "grupo": "301"
+    },
+    {
+      "num_cuenta": "500012",
+      "apellidos": "Núñez Cruz",
+      "nombre": "Carla",
+      "grupo": "302"
+    }
+  ],
+  "cursos": [
+    {
+      "id": "C01",
+      "asignatura": "Control Digital",
+      "grupo": "301"
+    },
+    {
+      "id": "C02",
+      "asignatura": "Estructuras de Datos",
+      "grupo": "301"
+    },
+    {
+      "id": "C03",
+      "asignatura": "Arquitectura de Computadoras",
+      "grupo": "301"
+    },
+    {
+      "id": "C04",
+      "asignatura": "Redes",
+      "grupo": "302"
+    },
+    {
+      "id": "C05",
+      "asignatura": "Programación Web",
+      "grupo": "302"
+    },
+    {
+      "id": "C06",
+      "asignatura": "Probabilidad",
+      "grupo": "302"
+    }
+  ],
+  "parciales": [
+    {
+      "id": "P01",
+      "curso_id": "C01",
+      "numero": 1,
+      "peso": 0.25
+    },
+    {
+      "id": "P02",
+      "curso_id": "C01",
+      "numero": 2,
+      "peso": 0.25
+    },
+    {
+      "id": "P03",
+      "curso_id": "C01",
+      "numero": 3,
+      "peso": 0.5
+    },
+    {
+      "id": "P04",
+      "curso_id": "C02",
+      "numero": 1,
+      "peso": 0.3
+    },
+    {
+      "id": "P05",
+      "curso_id": "C02",
+      "numero": 2,
+      "peso": 0.3
+    },
+    {
+      "id": "P06",
+      "curso_id": "C02",
+      "numero": 3,
+      "peso": 0.4
+    },
+    {
+      "id": "P07",
+      "curso_id": "C03",
+      "numero": 1,
+      "peso": 0.3
+    },
+    {
+      "id": "P08",
+      "curso_id": "C03",
+      "numero": 2,
+      "peso": 0.3
+    },
+    {
+      "id": "P09",
+      "curso_id": "C03",
+      "numero": 3,
+      "peso": 0.4
+    },
+    {
+      "id": "P10",
+      "curso_id": "C04",
+      "numero": 1,
+      "peso": 0.25
+    },
+    {
+      "id": "P11",
+      "curso_id": "C04",
+      "numero": 2,
+      "peso": 0.25
+    },
+    {
+      "id": "P12",
+      "curso_id": "C04",
+      "numero": 3,
+      "peso": 0.5
+    },
+    {
+      "id": "P13",
+      "curso_id": "C05",
+      "numero": 1,
+      "peso": 0.3
+    },
+    {
+      "id": "P14",
+      "curso_id": "C05",
+      "numero": 2,
+      "peso": 0.3
+    },
+    {
+      "id": "P15",
+      "curso_id": "C05",
+      "numero": 3,
+      "peso": 0.4
+    },
+    {
+      "id": "P16",
+      "curso_id": "C06",
+      "numero": 1,
+      "peso": 0.25
+    },
+    {
+      "id": "P17",
+      "curso_id": "C06",
+      "numero": 2,
+      "peso": 0.25
+    },
+    {
+      "id": "P18",
+      "curso_id": "C06",
+      "numero": 3,
+      "peso": 0.5
+    }
+  ],
+  "evaluaciones": [
+    {
+      "id": "EV01",
+      "parcial_id": "P01",
+      "nombre": "Examen",
+      "peso": 0.5
+    },
+    {
+      "id": "EV02",
+      "parcial_id": "P01",
+      "nombre": "Proyecto",
+      "peso": 0.5
+    },
+    {
+      "id": "EV03",
+      "parcial_id": "P02",
+      "nombre": "Examen",
+      "peso": 0.48
+    },
+    {
+      "id": "EV04",
+      "parcial_id": "P02",
+      "nombre": "Tareas",
+      "peso": 0.32
+    },
+    {
+      "id": "EV05",
+      "parcial_id": "P02",
+      "nombre": "Coevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV06",
+      "parcial_id": "P02",
+      "nombre": "Autoevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV07",
+      "parcial_id": "P03",
+      "nombre": "Examen",
+      "peso": 0.5
+    },
+    {
+      "id": "EV08",
+      "parcial_id": "P03",
+      "nombre": "Proyecto",
+      "peso": 0.5
+    },
+    {
+      "id": "EV09",
+      "parcial_id": "P04",
+      "nombre": "Examen",
+      "peso": 0.48
+    },
+    {
+      "id": "EV10",
+      "parcial_id": "P04",
+      "nombre": "Tareas",
+      "peso": 0.32
+    },
+    {
+      "id": "EV11",
+      "parcial_id": "P04",
+      "nombre": "Coevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV12",
+      "parcial_id": "P04",
+      "nombre": "Autoevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV13",
+      "parcial_id": "P05",
+      "nombre": "Examen",
+      "peso": 0.5
+    },
+    {
+      "id": "EV14",
+      "parcial_id": "P05",
+      "nombre": "Proyecto",
+      "peso": 0.5
+    },
+    {
+      "id": "EV15",
+      "parcial_id": "P06",
+      "nombre": "Examen",
+      "peso": 0.48
+    },
+    {
+      "id": "EV16",
+      "parcial_id": "P06",
+      "nombre": "Tareas",
+      "peso": 0.32
+    },
+    {
+      "id": "EV17",
+      "parcial_id": "P06",
+      "nombre": "Coevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV18",
+      "parcial_id": "P06",
+      "nombre": "Autoevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV19",
+      "parcial_id": "P07",
+      "nombre": "Examen",
+      "peso": 0.5
+    },
+    {
+      "id": "EV20",
+      "parcial_id": "P07",
+      "nombre": "Proyecto",
+      "peso": 0.5
+    },
+    {
+      "id": "EV21",
+      "parcial_id": "P08",
+      "nombre": "Examen",
+      "peso": 0.6
+    },
+    {
+      "id": "EV22",
+      "parcial_id": "P08",
+      "nombre": "Actividades",
+      "peso": 0.2
+    },
+    {
+      "id": "EV23",
+      "parcial_id": "P08",
+      "nombre": "Tareas",
+      "peso": 0.2
+    },
+    {
+      "id": "EV24",
+      "parcial_id": "P09",
+      "nombre": "Examen",
+      "peso": 0.48
+    },
+    {
+      "id": "EV25",
+      "parcial_id": "P09",
+      "nombre": "Tareas",
+      "peso": 0.32
+    },
+    {
+      "id": "EV26",
+      "parcial_id": "P09",
+      "nombre": "Coevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV27",
+      "parcial_id": "P09",
+      "nombre": "Autoevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV28",
+      "parcial_id": "P10",
+      "nombre": "Examen",
+      "peso": 0.48
+    },
+    {
+      "id": "EV29",
+      "parcial_id": "P10",
+      "nombre": "Tareas",
+      "peso": 0.32
+    },
+    {
+      "id": "EV30",
+      "parcial_id": "P10",
+      "nombre": "Coevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV31",
+      "parcial_id": "P10",
+      "nombre": "Autoevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV32",
+      "parcial_id": "P11",
+      "nombre": "Examen",
+      "peso": 0.6
+    },
+    {
+      "id": "EV33",
+      "parcial_id": "P11",
+      "nombre": "Actividades",
+      "peso": 0.2
+    },
+    {
+      "id": "EV34",
+      "parcial_id": "P11",
+      "nombre": "Tareas",
+      "peso": 0.2
+    },
+    {
+      "id": "EV35",
+      "parcial_id": "P12",
+      "nombre": "Examen",
+      "peso": 0.48
+    },
+    {
+      "id": "EV36",
+      "parcial_id": "P12",
+      "nombre": "Tareas",
+      "peso": 0.32
+    },
+    {
+      "id": "EV37",
+      "parcial_id": "P12",
+      "nombre": "Coevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV38",
+      "parcial_id": "P12",
+      "nombre": "Autoevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV39",
+      "parcial_id": "P13",
+      "nombre": "Examen",
+      "peso": 0.6
+    },
+    {
+      "id": "EV40",
+      "parcial_id": "P13",
+      "nombre": "Actividades",
+      "peso": 0.2
+    },
+    {
+      "id": "EV41",
+      "parcial_id": "P13",
+      "nombre": "Tareas",
+      "peso": 0.2
+    },
+    {
+      "id": "EV42",
+      "parcial_id": "P14",
+      "nombre": "Examen",
+      "peso": 0.48
+    },
+    {
+      "id": "EV43",
+      "parcial_id": "P14",
+      "nombre": "Tareas",
+      "peso": 0.32
+    },
+    {
+      "id": "EV44",
+      "parcial_id": "P14",
+      "nombre": "Coevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV45",
+      "parcial_id": "P14",
+      "nombre": "Autoevaluación",
+      "peso": 0.1
+    },
+    {
+      "id": "EV46",
+      "parcial_id": "P15",
+      "nombre": "Examen",
+      "peso": 0.6
+    },
+    {
+      "id": "EV47",
+      "parcial_id": "P15",
+      "nombre": "Actividades",
+      "peso": 0.2
+    },
+    {
+      "id": "EV48",
+      "parcial_id": "P15",
+      "nombre": "Tareas",
+      "peso": 0.2
+    },
+    {
+      "id": "EV49",
+      "parcial_id": "P16",
+      "nombre": "Examen",
+      "peso": 0.6
+    },
+    {
+      "id": "EV50",
+      "parcial_id": "P16",
+      "nombre": "Actividades",
+      "peso": 0.2
+    },
+    {
+      "id": "EV51",
+      "parcial_id": "P16",
+      "nombre": "Tareas",
+      "peso": 0.2
+    },
+    {
+      "id": "EV52",
+      "parcial_id": "P17",
+      "nombre": "Examen",
+      "peso": 0.6
+    },
+    {
+      "id": "EV53",
+      "parcial_id": "P17",
+      "nombre": "Actividades",
+      "peso": 0.2
+    },
+    {
+      "id": "EV54",
+      "parcial_id": "P17",
+      "nombre": "Tareas",
+      "peso": 0.2
+    },
+    {
+      "id": "EV55",
+      "parcial_id": "P18",
+      "nombre": "Examen",
+      "peso": 0.6
+    },
+    {
+      "id": "EV56",
+      "parcial_id": "P18",
+      "nombre": "Actividades",
+      "peso": 0.2
+    },
+    {
+      "id": "EV57",
+      "parcial_id": "P18",
+      "nombre": "Tareas",
+      "peso": 0.2
+    }
+  ],
+  "inscripciones": [
+    {
+      "num_cuenta": "500001",
+      "curso_id": "C01"
+    },
+    {
+      "num_cuenta": "500001",
+      "curso_id": "C02"
+    },
+    {
+      "num_cuenta": "500001",
+      "curso_id": "C03"
+    },
+    {
+      "num_cuenta": "500002",
+      "curso_id": "C04"
+    },
+    {
+      "num_cuenta": "500002",
+      "curso_id": "C05"
+    },
+    {
+      "num_cuenta": "500002",
+      "curso_id": "C06"
+    },
+    {
+      "num_cuenta": "500003",
+      "curso_id": "C01"
+    },
+    {
+      "num_cuenta": "500003",
+      "curso_id": "C02"
+    },
+    {
+      "num_cuenta": "500003",
+      "curso_id": "C03"
+    },
+    {
+      "num_cuenta": "500004",
+      "curso_id": "C04"
+    },
+    {
+      "num_cuenta": "500004",
+      "curso_id": "C05"
+    },
+    {
+      "num_cuenta": "500004",
+      "curso_id": "C06"
+    },
+    {
+      "num_cuenta": "500005",
+      "curso_id": "C01"
+    },
+    {
+      "num_cuenta": "500005",
+      "curso_id": "C02"
+    },
+    {
+      "num_cuenta": "500005",
+      "curso_id": "C03"
+    },
+    {
+      "num_cuenta": "500006",
+      "curso_id": "C04"
+    },
+    {
+      "num_cuenta": "500006",
+      "curso_id": "C05"
+    },
+    {
+      "num_cuenta": "500006",
+      "curso_id": "C06"
+    },
+    {
+      "num_cuenta": "500007",
+      "curso_id": "C01"
+    },
+    {
+      "num_cuenta": "500007",
+      "curso_id": "C02"
+    },
+    {
+      "num_cuenta": "500007",
+      "curso_id": "C03"
+    },
+    {
+      "num_cuenta": "500008",
+      "curso_id": "C04"
+    },
+    {
+      "num_cuenta": "500008",
+      "curso_id": "C05"
+    },
+    {
+      "num_cuenta": "500008",
+      "curso_id": "C06"
+    },
+    {
+      "num_cuenta": "500009",
+      "curso_id": "C01"
+    },
+    {
+      "num_cuenta": "500009",
+      "curso_id": "C02"
+    },
+    {
+      "num_cuenta": "500009",
+      "curso_id": "C03"
+    },
+    {
+      "num_cuenta": "500010",
+      "curso_id": "C04"
+    },
+    {
+      "num_cuenta": "500010",
+      "curso_id": "C05"
+    },
+    {
+      "num_cuenta": "500010",
+      "curso_id": "C06"
+    },
+    {
+      "num_cuenta": "500011",
+      "curso_id": "C01"
+    },
+    {
+      "num_cuenta": "500011",
+      "curso_id": "C02"
+    },
+    {
+      "num_cuenta": "500011",
+      "curso_id": "C03"
+    },
+    {
+      "num_cuenta": "500012",
+      "curso_id": "C04"
+    },
+    {
+      "num_cuenta": "500012",
+      "curso_id": "C05"
+    },
+    {
+      "num_cuenta": "500012",
+      "curso_id": "C06"
+    }
+  ],
+  "calificaciones": [
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV01",
+      "valor": 4.7
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV02",
+      "valor": 7.2
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV03",
+      "valor": 5.3
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV04",
+      "valor": 4.1
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV05",
+      "valor": 7.3
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV06",
+      "valor": 6.6
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV07",
+      "valor": 4.9
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV08",
+      "valor": 5.6
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV09",
+      "valor": 4.9
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV10",
+      "valor": 6.0
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV11",
+      "valor": 7.4
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV12",
+      "valor": 5.0
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV13",
+      "valor": 6.0
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV14",
+      "valor": 6.9
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV15",
+      "valor": 5.9
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV16",
+      "valor": 5.4
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV17",
+      "valor": 6.8
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV18",
+      "valor": 3.9
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV19",
+      "valor": 5.5
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV20",
+      "valor": 6.1
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV21",
+      "valor": 7.1
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV22",
+      "valor": 5.0
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV23",
+      "valor": 5.6
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV24",
+      "valor": 5.0
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV25",
+      "valor": 3.3
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV26",
+      "valor": 5.8
+    },
+    {
+      "num_cuenta": "500001",
+      "evaluacion_id": "EV27",
+      "valor": 5.4
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV28",
+      "valor": 5.2
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV29",
+      "valor": 5.7
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV30",
+      "valor": 4.2
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV31",
+      "valor": 5.7
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV32",
+      "valor": 4.4
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV33",
+      "valor": 4.7
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV34",
+      "valor": 5.1
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV35",
+      "valor": 6.4
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV36",
+      "valor": 5.7
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV37",
+      "valor": 3.7
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV38",
+      "valor": 5.8
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV39",
+      "valor": 6.1
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV40",
+      "valor": 5.2
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV41",
+      "valor": 6.7
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV42",
+      "valor": 7.2
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV43",
+      "valor": 4.7
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV44",
+      "valor": 5.0
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV45",
+      "valor": 4.6
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV46",
+      "valor": 4.9
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV47",
+      "valor": 5.7
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV48",
+      "valor": 7.2
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV49",
+      "valor": 7.4
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV50",
+      "valor": 5.1
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV51",
+      "valor": 7.6
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV52",
+      "valor": 7.3
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV53",
+      "valor": 5.7
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV54",
+      "valor": 3.6
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV55",
+      "valor": 5.2
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV56",
+      "valor": 6.5
+    },
+    {
+      "num_cuenta": "500002",
+      "evaluacion_id": "EV57",
+      "valor": 5.8
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV01",
+      "valor": 8.7
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV02",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV03",
+      "valor": 5.5
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV04",
+      "valor": 8.7
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV05",
+      "valor": 7.2
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV06",
+      "valor": 9.9
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV07",
+      "valor": 9.7
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV08",
+      "valor": 9.4
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV09",
+      "valor": 7.4
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV10",
+      "valor": 9.0
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV11",
+      "valor": 9.7
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV12",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV13",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV14",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV15",
+      "valor": 7.4
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV16",
+      "valor": 7.5
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV17",
+      "valor": 7.8
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV18",
+      "valor": 9.5
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV19",
+      "valor": 9.3
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV20",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV21",
+      "valor": 8.4
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV22",
+      "valor": 8.7
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV23",
+      "valor": 9.5
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV24",
+      "valor": 8.2
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV25",
+      "valor": 8.4
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV26",
+      "valor": 8.4
+    },
+    {
+      "num_cuenta": "500003",
+      "evaluacion_id": "EV27",
+      "valor": 6.4
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV28",
+      "valor": 9.3
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV29",
+      "valor": 9.8
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV30",
+      "valor": 8.3
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV31",
+      "valor": 7.4
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV32",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV33",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV34",
+      "valor": 7.5
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV35",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV36",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV37",
+      "valor": 9.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV38",
+      "valor": 9.2
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV39",
+      "valor": 8.1
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV40",
+      "valor": 8.4
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV41",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV42",
+      "valor": 8.1
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV43",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV44",
+      "valor": 9.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV45",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV46",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV47",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV48",
+      "valor": 8.4
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV49",
+      "valor": 9.4
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV50",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV51",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV52",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV53",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV54",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV55",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV56",
+      "valor": 8.9
+    },
+    {
+      "num_cuenta": "500004",
+      "evaluacion_id": "EV57",
+      "valor": 9.8
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV01",
+      "valor": 5.6
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV02",
+      "valor": 7.0
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV03",
+      "valor": 8.6
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV04",
+      "valor": 6.4
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV05",
+      "valor": 7.5
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV06",
+      "valor": 8.8
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV07",
+      "valor": 7.0
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV08",
+      "valor": 7.7
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV09",
+      "valor": 6.8
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV10",
+      "valor": 6.5
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV11",
+      "valor": 5.4
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV12",
+      "valor": 8.7
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV13",
+      "valor": 9.1
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV14",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV15",
+      "valor": 7.2
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV16",
+      "valor": 7.1
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV17",
+      "valor": 7.1
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV18",
+      "valor": 5.3
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV19",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV20",
+      "valor": 7.9
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV21",
+      "valor": 6.8
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV22",
+      "valor": 7.3
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV23",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV24",
+      "valor": 8.6
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV25",
+      "valor": 7.8
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV26",
+      "valor": 7.1
+    },
+    {
+      "num_cuenta": "500005",
+      "evaluacion_id": "EV27",
+      "valor": 8.3
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV28",
+      "valor": 3.3
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV29",
+      "valor": 4.6
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV30",
+      "valor": 4.3
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV31",
+      "valor": 6.0
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV32",
+      "valor": 5.5
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV33",
+      "valor": 5.5
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV34",
+      "valor": 4.6
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV35",
+      "valor": 4.3
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV36",
+      "valor": 6.3
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV37",
+      "valor": 7.2
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV38",
+      "valor": 3.5
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV39",
+      "valor": 5.5
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV40",
+      "valor": 5.6
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV41",
+      "valor": 3.4
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV42",
+      "valor": 7.2
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV43",
+      "valor": 5.7
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV44",
+      "valor": 4.5
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV45",
+      "valor": 4.8
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV46",
+      "valor": 3.7
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV47",
+      "valor": 5.9
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV48",
+      "valor": 3.8
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV49",
+      "valor": 4.7
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV50",
+      "valor": 5.6
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV51",
+      "valor": 5.6
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV52",
+      "valor": 5.9
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV53",
+      "valor": 5.5
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV54",
+      "valor": 5.1
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV55",
+      "valor": 5.3
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV56",
+      "valor": 5.8
+    },
+    {
+      "num_cuenta": "500006",
+      "evaluacion_id": "EV57",
+      "valor": 2.8
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV01",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV02",
+      "valor": 9.0
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV03",
+      "valor": 8.2
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV04",
+      "valor": 7.9
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV05",
+      "valor": 7.3
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV06",
+      "valor": 9.8
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV07",
+      "valor": 8.6
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV08",
+      "valor": 5.3
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV09",
+      "valor": 9.3
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV10",
+      "valor": 6.2
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV11",
+      "valor": 7.0
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV12",
+      "valor": 8.1
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV13",
+      "valor": 7.8
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV14",
+      "valor": 6.8
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV15",
+      "valor": 6.4
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV16",
+      "valor": 7.3
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV17",
+      "valor": 8.5
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV18",
+      "valor": 7.2
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV19",
+      "valor": 6.7
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV20",
+      "valor": 7.6
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV21",
+      "valor": 8.3
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV22",
+      "valor": 6.8
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV23",
+      "valor": 6.6
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV24",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV25",
+      "valor": 6.4
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV26",
+      "valor": 9.3
+    },
+    {
+      "num_cuenta": "500007",
+      "evaluacion_id": "EV27",
+      "valor": 7.8
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV28",
+      "valor": 9.0
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV29",
+      "valor": 8.7
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV30",
+      "valor": 7.2
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV31",
+      "valor": 7.8
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV32",
+      "valor": 7.6
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV33",
+      "valor": 8.2
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV34",
+      "valor": 7.9
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV35",
+      "valor": 8.8
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV36",
+      "valor": 6.4
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV37",
+      "valor": 8.4
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV38",
+      "valor": 6.7
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV39",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV40",
+      "valor": 8.3
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV41",
+      "valor": 6.4
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV42",
+      "valor": 7.1
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV43",
+      "valor": 6.5
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV44",
+      "valor": 8.3
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV45",
+      "valor": 7.6
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV46",
+      "valor": 8.5
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV47",
+      "valor": 7.2
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV48",
+      "valor": 9.3
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV49",
+      "valor": 6.6
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV50",
+      "valor": 8.4
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV51",
+      "valor": 8.6
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV52",
+      "valor": 8.1
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV53",
+      "valor": 8.9
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV54",
+      "valor": 6.9
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV55",
+      "valor": 5.6
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV56",
+      "valor": 6.9
+    },
+    {
+      "num_cuenta": "500008",
+      "evaluacion_id": "EV57",
+      "valor": 7.8
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV01",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV02",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV03",
+      "valor": 9.7
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV04",
+      "valor": 9.2
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV05",
+      "valor": 9.2
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV06",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV07",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV08",
+      "valor": 9.5
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV09",
+      "valor": 7.8
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV10",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV11",
+      "valor": 9.0
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV12",
+      "valor": 9.3
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV13",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV14",
+      "valor": 8.9
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV15",
+      "valor": 9.7
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV16",
+      "valor": 9.8
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV17",
+      "valor": 8.5
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV18",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV19",
+      "valor": 9.2
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV20",
+      "valor": 9.7
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV21",
+      "valor": 7.7
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV22",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV23",
+      "valor": 9.9
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV24",
+      "valor": 9.5
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV25",
+      "valor": 8.4
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV26",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500009",
+      "evaluacion_id": "EV27",
+      "valor": 9.0
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV28",
+      "valor": 6.8
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV29",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV30",
+      "valor": 5.5
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV31",
+      "valor": 7.8
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV32",
+      "valor": 5.1
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV33",
+      "valor": 7.9
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV34",
+      "valor": 8.5
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV35",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV36",
+      "valor": 7.1
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV37",
+      "valor": 7.2
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV38",
+      "valor": 8.2
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV39",
+      "valor": 9.7
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV40",
+      "valor": 6.8
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV41",
+      "valor": 6.3
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV42",
+      "valor": 8.7
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV43",
+      "valor": 7.7
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV44",
+      "valor": 6.9
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV45",
+      "valor": 8.8
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV46",
+      "valor": 9.4
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV47",
+      "valor": 7.5
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV48",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV49",
+      "valor": 7.0
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV50",
+      "valor": 7.9
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV51",
+      "valor": 8.8
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV52",
+      "valor": 7.3
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV53",
+      "valor": 8.8
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV54",
+      "valor": 5.6
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV55",
+      "valor": 8.1
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV56",
+      "valor": 9.5
+    },
+    {
+      "num_cuenta": "500010",
+      "evaluacion_id": "EV57",
+      "valor": 7.0
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV01",
+      "valor": 5.9
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV02",
+      "valor": 5.5
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV03",
+      "valor": 4.2
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV04",
+      "valor": 3.5
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV05",
+      "valor": 5.2
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV06",
+      "valor": 5.9
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV07",
+      "valor": 4.5
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV08",
+      "valor": 7.8
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV09",
+      "valor": 5.8
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV10",
+      "valor": 5.2
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV11",
+      "valor": 6.9
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV12",
+      "valor": 5.7
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV13",
+      "valor": 5.3
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV14",
+      "valor": 4.4
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV15",
+      "valor": 4.7
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV16",
+      "valor": 5.6
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV17",
+      "valor": 4.1
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV18",
+      "valor": 5.9
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV19",
+      "valor": 5.3
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV20",
+      "valor": 6.0
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV21",
+      "valor": 4.9
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV22",
+      "valor": 6.6
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV23",
+      "valor": 5.7
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV24",
+      "valor": 3.2
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV25",
+      "valor": 5.1
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV26",
+      "valor": 4.2
+    },
+    {
+      "num_cuenta": "500011",
+      "evaluacion_id": "EV27",
+      "valor": 2.7
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV28",
+      "valor": 9.1
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV29",
+      "valor": 9.9
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV30",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV31",
+      "valor": 7.8
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV32",
+      "valor": 7.4
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV33",
+      "valor": 7.4
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV34",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV35",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV36",
+      "valor": 6.9
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV37",
+      "valor": 8.6
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV38",
+      "valor": 7.8
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV39",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV40",
+      "valor": 7.9
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV41",
+      "valor": 8.4
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV42",
+      "valor": 8.1
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV43",
+      "valor": 7.7
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV44",
+      "valor": 8.7
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV45",
+      "valor": 7.9
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV46",
+      "valor": 7.6
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV47",
+      "valor": 8.2
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV48",
+      "valor": 9.2
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV49",
+      "valor": 7.8
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV50",
+      "valor": 9.2
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV51",
+      "valor": 10.0
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV52",
+      "valor": 7.9
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV53",
+      "valor": 8.0
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV54",
+      "valor": 7.0
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV55",
+      "valor": 9.3
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV56",
+      "valor": 6.6
+    },
+    {
+      "num_cuenta": "500012",
+      "evaluacion_id": "EV57",
+      "valor": 8.5
+    }
+  ],
+  "docentes": [
+    {
+      "id": "D01",
+      "nombre": "Paola Ávila"
+    },
+    {
+      "id": "D02",
+      "nombre": "Valeria Ortega"
+    }
+  ],
+  "asignaciones": [
+    {
+      "docente_id": "D01",
+      "curso_id": "C01"
+    },
+    {
+      "docente_id": "D02",
+      "curso_id": "C02"
+    },
+    {
+      "docente_id": "D01",
+      "curso_id": "C03"
+    },
+    {
+      "docente_id": "D02",
+      "curso_id": "C04"
+    },
+    {
+      "docente_id": "D01",
+      "curso_id": "C05"
+    },
+    {
+      "docente_id": "D02",
+      "curso_id": "C06"
+    }
+  ]
+}
