@@ -1,13 +1,13 @@
 window.RESULTADOS = {
-  "generado": "2026-11-16 18:30",
+  "generado": "2026-11-16 23:28",
   "equipo": {
-    "sistema": "Linux 6.18.44-fc-v509 (x86_64)",
-    "nucleos": 2,
-    "python": "3.13.18",
-    "node": "v22.23.4",
-    "java": "openjdk version \"21.0.12.1\" 2026-08-18"
+    "sistema": "Darwin 27.2.0 (arm64)",
+    "nucleos": 10,
+    "python": "3.13.5",
+    "node": "v26.13.1",
+    "java": "java version \"25\" 2025-09-16 LTS"
   },
-  "repeticiones": 3,
+  "repeticiones": 1,
   "datos": {
     "pequenas": {
       "estudiantes": 12,
@@ -28,112 +28,72 @@ window.RESULTADOS = {
       "calificaciones": 34400,
       "docentes": 6,
       "asignaciones": 20
-    },
-    "grandes": {
-      "estudiantes": 20000,
-      "cursos": 60,
-      "parciales": 180,
-      "evaluaciones": 548,
-      "inscripciones": 60000,
-      "calificaciones": 548000,
-      "docentes": 20,
-      "asignaciones": 60
     }
   },
   "tiempos": {
     "python": {
       "pequenas": {
         "secuencial": {
-          "calculo_ms": 0.61,
-          "total_ms": 80.4
+          "calculo_ms": 0.36,
+          "total_ms": 200.0
         },
         "concurrente": {
-          "calculo_ms": 10.52,
-          "total_ms": 98.3
+          "calculo_ms": 96.48,
+          "total_ms": 151.4
         }
       },
       "medias": {
         "secuencial": {
-          "calculo_ms": 62.16,
-          "total_ms": 755.5
+          "calculo_ms": 35.07,
+          "total_ms": 447.7
         },
         "concurrente": {
-          "calculo_ms": 132.44,
-          "total_ms": 841.4
-        }
-      },
-      "grandes": {
-        "secuencial": {
-          "calculo_ms": 1345.72,
-          "total_ms": 12206.5
-        },
-        "concurrente": {
-          "calculo_ms": 2670.15,
-          "total_ms": 14129.1
+          "calculo_ms": 176.27,
+          "total_ms": 588.3
         }
       }
     },
     "javascript": {
       "pequenas": {
         "secuencial": {
-          "calculo_ms": 1.25,
-          "total_ms": 48.3
+          "calculo_ms": 0.65,
+          "total_ms": 227.6
         },
         "concurrente": {
-          "calculo_ms": 44.99,
-          "total_ms": 92.6
+          "calculo_ms": 13.36,
+          "total_ms": 109.0
         }
       },
       "medias": {
         "secuencial": {
-          "calculo_ms": 86.02,
-          "total_ms": 461.4
+          "calculo_ms": 25.22,
+          "total_ms": 246.2
         },
         "concurrente": {
-          "calculo_ms": 235.02,
-          "total_ms": 632.5
-        }
-      },
-      "grandes": {
-        "secuencial": {
-          "calculo_ms": 819.53,
-          "total_ms": 6296.1
-        },
-        "concurrente": {
-          "calculo_ms": 2847.03,
-          "total_ms": 8399.6
+          "calculo_ms": 103.64,
+          "total_ms": 326.5
         }
       }
     },
     "java": {
       "pequenas": {
         "secuencial": {
-          "calculo_ms": 15.89,
-          "total_ms": 290.5
+          "calculo_ms": 5.86,
+          "total_ms": 120.0
         },
         "concurrente": {
-          "calculo_ms": 34.94,
-          "total_ms": 332.2
+          "calculo_ms": 7.57,
+          "total_ms": 117.9
         }
       },
       "medias": {
         "secuencial": {
-          "calculo_ms": 172.36,
-          "total_ms": 1573.0
+          "calculo_ms": 48.43,
+          "total_ms": 541.0
         },
         "concurrente": {
-          "calculo_ms": 201.23,
-          "total_ms": 1645.4
-        }
-      },
-      "grandes": {
-        "secuencial": {
-          "calculo_ms": 756.08,
-          "total_ms": 8661.8
-        },
-        "concurrente": {
-          "calculo_ms": 842.17,
-          "total_ms": 9004.7
+          "calculo_ms": 65.3,
+          "total_ms": 548.6
         }
       }
     }
@@ -152,14 +112,6 @@ window.RESULTADOS = {
       "identicos": true
     },
     "medias/concurrente": {
-      "reportes": 13,
-      "identicos": true
-    },
-    "grandes/secuencial": {
-      "reportes": 13,
-      "identicos": true
-    },
-    "grandes/concurrente": {
       "reportes": 13,
       "identicos": true
     }
@@ -222,35 +174,6 @@ window.RESULTADOS = {
         "riesgo_medio": 29,
         "rechazados": 0
       }
-    },
-    "grandes": {
-      "python": {
-        "estudiantes": 20000,
-        "promedio_general": 7.44,
-        "aprobados": 12070,
-        "reprobados": 7930,
-        "riesgo_alto": 9485,
-        "riesgo_medio": 692,
-        "rechazados": 0
-      },
-      "javascript": {
-        "estudiantes": 20000,
-        "promedio_general": 7.44,
-        "aprobados": 12070,
-        "reprobados": 7930,
-        "riesgo_alto": 9485,
-        "riesgo_medio": 692,
-        "rechazados": 0
-      },
-      "java": {
-        "estudiantes": 20000,
-        "promedio_general": 7.44,
-        "aprobados": 12070,
-        "reprobados": 7930,
-        "riesgo_alto": 9485,
-        "riesgo_medio": 692,
-        "rechazados": 0
-      }
     }
   },
   "lineas": {
@@ -285,12 +208,12 @@ window.RESULTADOS = {
       "ok": true
     },
     "javascript": {
-      "pruebas": 46,
-      "ok": true
+      "pruebas": null,
+      "ok": null
     },
     "java": {
       "pruebas": 40,
-      "ok": null
+      "ok": true
     }
   },
   "valoracion": {
