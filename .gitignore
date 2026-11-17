@@ -1,0 +1,19 @@
+# Estado local del sistema (contiene hashes de contraseñas cambiadas por los usuarios)
+datos/base.json
+datos/base.json.tmp
+
+# Compilados y dependencias
+java/out/
+java/target/
+node_modules/
+__pycache__/
+*.pyc
+
+# Reportes generados al ejecutar la línea de comandos
+**/reportes/
+
+# Sistema operativo y editores
+.DS_Store
+.idea/
+.vscode/
+comparativo/.java-out/
