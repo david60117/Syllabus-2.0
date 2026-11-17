@@ -1,7 +1,6 @@
 from collections import defaultdict
 from datetime import datetime
 
-
 class BusEventos:
     """Publica eventos del gestor; la interfaz y el historial se suscriben a ellos."""
 
