@@ -1,0 +1,9 @@
+digraph G { rankdir=TB; graph [fontname="Helvetica" fontsize=11 pad=0.3 nodesep=0.3 ranksep=0.45 label="Flujo de acceso y perfiles" labelloc=t fontsize=14];
+ node [fontname="Helvetica" fontsize=11 shape=box style="rounded,filled" fillcolor="#ffffff" color="#c9bcb5"]; edge [fontname="Helvetica" fontsize=11 color="#8a7f7b" fontsize=9];
+ login [label="Inicio de sesión\nusuario + contraseña"]; hash [label="SHA-256 coincide?" shape=diamond fillcolor="#faf7f5"];
+ cambiar [label="¿Contraseña inicial?" shape=diamond fillcolor="#faf7f5"]; mi [label="Mi cuenta\n(cambio obligatorio:\n≥ 8, letras y números)" fillcolor="#fff4e5"];
+ rol [label="Rol" shape=diamond fillcolor="#faf7f5"];
+ adm [label="Administrador · control escolar\nEstudiantes · Grupos y materias · Docentes\nInscripciones · Consultas · Reportes · Usuarios"];
+ doc [label="Docente\nMis cursos · Plan de evaluación\nCaptura (acta) · Consultas · Reportes"]; alu [label="Alumno\nInicio · Mis calificaciones · Kárdex"];
+ login -> hash; hash -> login [label="no: «usuario o contraseña incorrectos»" style=dashed]; hash -> cambiar [label="sí"];
+ cambiar -> mi [label="sí"]; mi -> rol [label="contraseña nueva"]; cambiar -> rol [label="no"]; rol -> adm; rol -> doc; rol -> alu; }

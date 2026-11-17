@@ -1,0 +1,21 @@
+digraph G { rankdir=TB; graph [fontname="Helvetica" fontsize=11 pad=0.3 nodesep=0.35 ranksep=0.55 label="Java · orientado a objetos (paquetes mx.uaeh.syllabus.*)" labelloc=t fontsize=14];
+ node [fontname="Helvetica" fontsize=11 shape=record style="filled" fillcolor="#ffffff" color="#c9bcb5"]; edge [fontname="Helvetica" fontsize=11 color="#8a7f7b" fontsize=9];
+ subgraph cluster_ui { label="ui"; style=rounded; color="#e9dfd9";
+  App [label="{App|- gestor, cuentas, rol, vista\l|+ entrar(), ir(), refrescar()\l+ guardarAhora()\l}"];
+  Vista [label="{«abstract» Vista|# app, g\l|+ dibujar() «abstract»\l# tarjeta(), tabla, exportar()\l}" fillcolor="#e3f6ef"];
+  Vs [label="{VistaEstudiantes · VistaGruposMaterias · VistaDocentes\nVistaInscripciones · VistaUsuarios · VistaPlan · VistaCaptura\nVistaConsultas · VistaReportes · VistaInicio · VistaMiCuenta ...}"];
+  Comp [label="{Componentes · Tabla · Boton\nRedondo · Iconos · Tema}"]; }
+ subgraph cluster_logica { label="logica"; style=rounded; color="#e9dfd9";
+  Calc [label="{Calculadora|# estudiantes, cursos, calificaciones\l|+ promedioCurso(), resumenEstudiante()\l}"];
+  Gestor [label="{GestorEscolar|- bus: BusEventos\l|+ altaGrupo(), altaCurso()\l+ definirPlanes(), guardarActa()\l}" fillcolor="#e3f6ef"];
+  Aut [label="{Autenticacion|+ iniciarSesion(), sincronizar()\l}"]; Conc [label="{Concurrencia|ExecutorService\l}"]; Calculos [label="{Calculos · Validacion\n(BigDecimal, reglas)}"]; }
+ subgraph cluster_modelo { label="modelo"; style=rounded; color="#e9dfd9";
+  Rec [label="{«record»\nEstudiante · Curso · Grupo · Parcial\nEvaluacion · Docente · ResumenEstudiante}"]; Cuenta [label="{Cuenta|- contrasenaSha256\l|+ setContrasena()\l}"];
+  Bus [label="{BusEventos «observador»|+ suscribir(), emitir()\l}"]; Err [label="{ErrorValidacion\nextends RuntimeException}"]; }
+ subgraph cluster_doc { label="documentos · archivos"; style=rounded; color="#e9dfd9";
+  Docs [label="{Documentos «fábrica»|+ boleta(), kardex(), acta()...\l}"]; Doc [label="{«record» Documento}"]; Pdf [label="{Pdf|+ generar()\l}"]; Per [label="{Persistencia|+ abrir(), guardar()\l}"]; }
+ Vs -> Vista [arrowhead=empty label="extends"]; Gestor -> Calc [arrowhead=empty label="extends"];
+ App -> Vista [label="dibujar() polimórfico"]; Vista -> Comp; App -> Gestor; App -> Aut; App -> Per; Vista -> Docs;
+ Gestor -> Bus [label="emite"]; Bus -> App [label="notifica" style=dashed]; Gestor -> Rec; Gestor -> Err [style=dashed label="lanza"]; Gestor -> Calculos;
+ Aut -> Cuenta; Docs -> Doc; Pdf -> Doc; Conc -> Calc;
+ Comp -> Gestor [style=invis]; Calc -> Rec [style=invis]; Calc -> Bus [style=invis]; }

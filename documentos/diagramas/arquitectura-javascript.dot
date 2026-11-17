@@ -1,0 +1,15 @@
+digraph G { rankdir=LR; graph [fontname="Helvetica" fontsize=11 pad=0.3 nodesep=0.35 ranksep=0.6 label="JavaScript · declarativo (vista = f(estado))" labelloc=t fontsize=14];
+ node [fontname="Helvetica" fontsize=11 shape=box style="rounded,filled" fillcolor="#ffffff" color="#c9bcb5"]; edge [fontname="Helvetica" fontsize=11 color="#8a7f7b" fontsize=9];
+ subgraph cluster_nav { label="Navegador"; style=rounded; color="#e9dfd9";
+  ev [label="Eventos delegados\naddEventListener(click, input, change)"];
+  app [label="web/app.js\nestado + hacer(operación)" fillcolor="#fdeee6"];
+  vistas [label="web/vistas.js · componentes.js\nfunciones puras: estado → HTML" fillcolor="#eb6834" fontcolor="white" color="#eb6834"];
+  dom [label="Página (innerHTML)"]; }
+ subgraph cluster_nucleo { label="Núcleo compartido (navegador y Node)"; style=rounded; color="#e9dfd9";
+  gestor [label="gestor.js · GestorEscolar\nregistros congelados (Object.freeze)"]; calc [label="calculos.js · validacion.js\nmap / filter / reduce, BigInt"];
+  docs [label="documentos.js · pdf.js\ntransformaciones puras"]; per [label="persistencia.js\npuro: datos ⇄ objeto"]; aut [label="autenticacion.js\nSHA-256 puro"]; }
+ subgraph cluster_node { label="Node.js"; style=rounded; color="#e9dfd9";
+  srv [label="servidor.js\nGET/PUT /api/base"]; cli [label="main.js --cli\nreportes.js"]; conc [label="concurrencia.js\nworker_threads + Promise.all"]; }
+ base [label="datos/base.json" fillcolor="#f6e9e7"];
+ ev -> app [label="acción"]; app -> gestor [label="operación"]; gestor -> calc; app -> vistas [label="render(estado)"]; vistas -> dom; vistas -> {calc docs};
+ app -> per; app -> srv [label="fetch PUT (diferido)"]; srv -> base; cli -> {gestor conc}; conc -> calc; app -> aut; }

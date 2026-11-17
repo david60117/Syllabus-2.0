@@ -1,0 +1,11 @@
+digraph G { rankdir=LR; graph [fontname="Helvetica" fontsize=11 bgcolor="white" pad=0.3 nodesep=0.35 ranksep=0.7 label="Arquitectura general: tres versiones sobre los mismos datos" labelloc=t fontsize=14];
+ node [fontname="Helvetica" fontsize=11 shape=box style="rounded,filled" fillcolor="#ffffff" color="#c9bcb5"]; edge [fontname="Helvetica" fontsize=11 color="#8a7f7b" fontsize=9];
+ subgraph cluster_datos { label="datos/ (contrato común)"; style="rounded,filled"; fillcolor="#faf7f5"; color="#e9dfd9";
+   sem [label="solicitudes_pequenas / medias / grandes.json"]; casos [label="casos_prueba.json\ninvalidos.json"]; usu [label="usuarios.json\n(cuentas de muestra)"]; base [label="base.json\n(estado guardado)" fillcolor="#f6e9e7"]; }
+ subgraph cluster_v { label="Implementaciones equivalentes"; style="rounded"; color="#e9dfd9";
+   py [label="python/\nOrientado a eventos\nTkinter · ProcessPoolExecutor" fillcolor="#e6effa"];
+   js [label="javascript/\nDeclarativo\nNavegador + Node · worker_threads" fillcolor="#fdeee6"];
+   ja [label="java/\nOrientado a objetos\nSwing · ExecutorService" fillcolor="#e3f6ef"]; }
+ rep [label="13 reportes CLI\n(CSV y JSON idénticos)"]; doc [label="Reportes institucionales\nPDF · CSV · JSON"]; cmp [label="comparativo/\nmedir.py → tablero.html" fillcolor="#f6e9e7"];
+ sem -> {py js ja}; casos -> {py js ja} [style=dashed label="pruebas"]; usu -> {py js ja} [style=dotted];
+ {py js ja} -> base [dir=both label="lee/guarda"]; {py js ja} -> rep [label="--cli"]; {py js ja} -> doc [label="interfaz"]; rep -> cmp [label="compara"]; }

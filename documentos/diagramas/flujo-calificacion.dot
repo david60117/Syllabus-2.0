@@ -1,0 +1,14 @@
+digraph G { rankdir=TB; graph [fontname="Helvetica" fontsize=11 pad=0.3 nodesep=0.3 ranksep=0.35 label="Flujo del proceso: de los datos al reporte (igual en las tres versiones)" labelloc=t fontsize=14];
+ node [fontname="Helvetica" fontsize=11 shape=box style="rounded,filled" fillcolor="#ffffff" color="#c9bcb5"]; edge [fontname="Helvetica" fontsize=11 color="#8a7f7b" fontsize=9];
+ ini [label="Inicio: archivo JSON o captura en el acta" shape=ellipse fillcolor="#faf7f5"];
+ val [label="Validar cada registro\n(campos, formato, referencias, rango 0–10, 1 decimal)"];
+ ok [label="¿Válido?" shape=diamond fillcolor="#faf7f5"]; err [label="Registrar error\n(código + detalle)\ny seguir con el siguiente" fillcolor="#f6e9e7"];
+ reg [label="Registrar en el gestor"]; parc [label="Nota de cada parcial =\nΣ calificación × peso de la evaluación"];
+ comp [label="¿Todas las evaluaciones\ncapturadas?" shape=diamond fillcolor="#faf7f5"]; pend [label="Curso PENDIENTE" fillcolor="#fff4e5"];
+ prom [label="Promedio del curso =\nΣ nota parcial × peso del parcial (30/30/40)"];
+ siete [label="¿Promedio ≥ 7.0?" shape=diamond fillcolor="#faf7f5"];
+ apr [label="APROBADO\nfinal = redondeo .5 hacia arriba\n(8.5 → 9)" fillcolor="#e3f6ef"]; rep [label="REPROBADO\nfinal truncada, no sube\n(6.9 → 6)" fillcolor="#f6e9e7"];
+ gen [label="Promedio general del alumno"]; riesgo [label="Riesgo académico\nALTO: reprobada o < 7.0 · MEDIO: 7.0–7.5 · SIN RIESGO"];
+ fin [label="Reportes: boleta, kárdex, acta, concentrado,\nestadísticas · PDF / CSV / JSON" shape=ellipse fillcolor="#faf7f5"];
+ ini -> val -> ok; ok -> err [label="no"]; err -> val [style=dashed label="siguiente"]; ok -> reg [label="sí"]; reg -> parc -> comp;
+ comp -> pend [label="no"]; comp -> prom [label="sí"]; prom -> siete; siete -> apr [label="sí"]; siete -> rep [label="no"]; {apr rep pend} -> gen -> riesgo -> fin; }

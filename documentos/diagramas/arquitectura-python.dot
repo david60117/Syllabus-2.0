@@ -1,0 +1,10 @@
+digraph G { rankdir=TB; graph [fontname="Helvetica" fontsize=11 pad=0.3 nodesep=0.4 ranksep=0.5 label="Python · orientado a eventos" labelloc=t fontsize=14];
+ node [fontname="Helvetica" fontsize=11 shape=box style="rounded,filled" fillcolor="#ffffff" color="#c9bcb5"]; edge [fontname="Helvetica" fontsize=11 color="#8a7f7b" fontsize=9];
+ usuario [label="Usuario" shape=ellipse fillcolor="#faf7f5"];
+ tk [label="Ciclo de eventos de Tkinter (mainloop)\nbind('<Button-1>'), '<Return>', trace_add, after()" fillcolor="#e6effa"];
+ ui [label="interfaz.py · App\nmarco, menú, al_evento()\nvistas.py · una función por pantalla"];
+ bus [label="eventos.py · BusEventos\nsuscribir() / emitir()" fillcolor="#2a78d6" fontcolor="white" color="#2a78d6"];
+ g [label="gestor.py · GestorEscolar\naltas, plan, acta, carga masiva"]; val [label="validacion.py\nerrores.py"]; calc [label="calculos.py\nDecimal, redondeo"]; mod [label="modelos.py\n@dataclass(frozen=True)"];
+ per [label="persistencia.py\nbase.json (escritura atómica)"]; aut [label="autenticacion.py\nSHA-256"]; docs [label="documentos.py · pdf.py\narchivos.py"]; conc [label="concurrencia.py\nProcessPoolExecutor"]; cli [label="main.py --cli\nreportes.py"];
+ usuario -> tk [label="clic / teclado"]; tk -> ui [label="callback"]; ui -> g [label="operación"]; g -> {val calc mod}; g -> bus [label="emitir(evento)"];
+ bus -> ui [label="al_evento: actividad, avisos,\nguardado diferido, refresco"]; ui -> per [label="after(250)"]; ui -> {aut docs}; cli -> {g conc}; conc -> calc; }
