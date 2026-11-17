@@ -1,0 +1,325 @@
+
+> syllabus-2-javascript@1.0.0 test
+> node --test tests/*.test.js
+
+TAP version 13
+# Subtest: cargarJson
+    # Subtest: carga el ejemplo válido
+    ok 1 - carga el ejemplo válido
+      ---
+      duration_ms: 4.999677
+      type: 'test'
+      ...
+    # Subtest: archivo inexistente
+    ok 2 - archivo inexistente
+      ---
+      duration_ms: 1.128665
+      type: 'test'
+      ...
+    # Subtest: JSON mal formado
+    ok 3 - JSON mal formado
+      ---
+      duration_ms: 1.351884
+      type: 'test'
+      ...
+    # Subtest: faltan llaves
+    ok 4 - faltan llaves
+      ---
+      duration_ms: 0.8908
+      type: 'test'
+      ...
+    # Subtest: llave que no es lista
+    ok 5 - llave que no es lista
+      ---
+      duration_ms: 0.87915
+      type: 'test'
+      ...
+    # Subtest: raíz que no es objeto
+    ok 6 - raíz que no es objeto
+      ---
+      duration_ms: 1.597986
+      type: 'test'
+      ...
+    1..6
+ok 1 - cargarJson
+  ---
+  duration_ms: 11.756929
+  type: 'suite'
+  ...
+# Subtest: exportar
+    # Subtest: JSON con acentos y números
+    ok 1 - JSON con acentos y números
+      ---
+      duration_ms: 2.140166
+      type: 'test'
+      ...
+    # Subtest: CSV con 2 decimales y BOM
+    ok 2 - CSV con 2 decimales y BOM
+      ---
+      duration_ms: 1.26126
+      type: 'test'
+      ...
+    # Subtest: exportarReportes genera todos los archivos
+    ok 3 - exportarReportes genera todos los archivos
+      ---
+      duration_ms: 1.663472
+      type: 'test'
+      ...
+    1..3
+ok 2 - exportar
+  ---
+  duration_ms: 5.401325
+  type: 'suite'
+  ...
+# Subtest: línea de comandos
+    # Subtest: genera reportes con el ejemplo
+    ok 1 - genera reportes con el ejemplo
+      ---
+      duration_ms: 52.339819
+      type: 'test'
+      ...
+    # Subtest: archivo inexistente: código 1 sin traza
+    ok 2 - archivo inexistente: código 1 sin traza
+      ---
+      duration_ms: 37.872714
+      type: 'test'
+      ...
+    # Subtest: modo concurrente da lo mismo que secuencial
+    ok 3 - modo concurrente da lo mismo que secuencial
+      ---
+      duration_ms: 137.580605
+      type: 'test'
+      ...
+    1..3
+ok 3 - línea de comandos
+  ---
+  duration_ms: 228.151069
+  type: 'suite'
+  ...
+# Subtest: un usuario de muestra por rol
+ok 4 - un usuario de muestra por rol
+  ---
+  duration_ms: 1.715804
+  type: 'test'
+  ...
+# Subtest: usuarios de muestra inician sesión
+ok 5 - usuarios de muestra inician sesión
+  ---
+  duration_ms: 0.691743
+  type: 'test'
+  ...
+# Subtest: contraseña incorrecta
+ok 6 - contraseña incorrecta
+  ---
+  duration_ms: 0.484106
+  type: 'test'
+  ...
+# Subtest: cuenta que no está en los datos cargados
+ok 7 - cuenta que no está en los datos cargados
+  ---
+  duration_ms: 0.155775
+  type: 'test'
+  ...
+# Subtest: CP-01 promedio ponderado
+ok 8 - CP-01 promedio ponderado
+  ---
+  duration_ms: 2.744624
+  type: 'test'
+  ...
+# Subtest: CP-02 límite de aprobación
+ok 9 - CP-02 límite de aprobación
+  ---
+  duration_ms: 0.466977
+  type: 'test'
+  ...
+# Subtest: CP-03 reprobación y riesgo alto
+ok 10 - CP-03 reprobación y riesgo alto
+  ---
+  duration_ms: 1.211946
+  type: 'test'
+  ...
+# Subtest: CP-04 estadísticas del curso
+ok 11 - CP-04 estadísticas del curso
+  ---
+  duration_ms: 0.912644
+  type: 'test'
+  ...
+# Subtest: CP-05 calificación fuera de rango
+ok 12 - CP-05 calificación fuera de rango
+  ---
+  duration_ms: 0.247228
+  type: 'test'
+  ...
+# Subtest: redondeo institucional
+ok 13 - redondeo institucional
+  ---
+  duration_ms: 0.110441
+  type: 'test'
+  ...
+# Subtest: fronteras de riesgo
+ok 14 - fronteras de riesgo
+  ---
+  duration_ms: 0.06289
+  type: 'test'
+  ...
+# Subtest: orden por apellidos sin acentos y desempate por cuenta
+ok 15 - orden por apellidos sin acentos y desempate por cuenta
+  ---
+  duration_ms: 0.598003
+  type: 'test'
+  ...
+# Subtest: ejemplo de entrada por parciales
+ok 16 - ejemplo de entrada por parciales
+  ---
+  duration_ms: 0.727621
+  type: 'test'
+  ...
+# Subtest: materia nueva con 3 parciales, docente y grupo inscrito
+ok 17 - materia nueva con 3 parciales, docente y grupo inscrito
+  ---
+  duration_ms: 7.450412
+  type: 'test'
+  ...
+# Subtest: alumno con cuenta automática e inscripción a su grupo
+ok 18 - alumno con cuenta automática e inscripción a su grupo
+  ---
+  duration_ms: 2.342419
+  type: 'test'
+  ...
+# Subtest: grupo registrado manualmente
+ok 19 - grupo registrado manualmente
+  ---
+  duration_ms: 2.475833
+  type: 'test'
+  ...
+# Subtest: cambio de grupo y baja
+ok 20 - cambio de grupo y baja
+  ---
+  duration_ms: 3.071801
+  type: 'test'
+  ...
+# Subtest: plan de evaluación y acta por lote
+ok 21 - plan de evaluación y acta por lote
+  ---
+  duration_ms: 3.218586
+  type: 'test'
+  ...
+# Subtest: asignación de docentes y excepciones de inscripción
+ok 22 - asignación de docentes y excepciones de inscripción
+  ---
+  duration_ms: 2.185289
+  type: 'test'
+  ...
+# Subtest: cuentas, contraseñas y respaldo
+ok 23 - cuentas, contraseñas y respaldo
+  ---
+  duration_ms: 6.202992
+  type: 'test'
+  ...
+# Subtest: calificación final: regla del .5
+ok 24 - calificación final: regla del .5
+  ---
+  duration_ms: 0.266764
+  type: 'test'
+  ...
+# Subtest: SHA-256 propio coincide con node:crypto
+ok 25 - SHA-256 propio coincide con node:crypto
+  ---
+  duration_ms: 2.689883
+  type: 'test'
+  ...
+# Subtest: encabezado en todos los reportes
+ok 26 - encabezado en todos los reportes
+  ---
+  duration_ms: 8.19872
+  type: 'test'
+  ...
+# Subtest: kárdex individual
+ok 27 - kárdex individual
+  ---
+  duration_ms: 0.822401
+  type: 'test'
+  ...
+# Subtest: acta: resumen y calificación final entera
+ok 28 - acta: resumen y calificación final entera
+  ---
+  duration_ms: 0.37831
+  type: 'test'
+  ...
+# Subtest: concentrado ordenado por promedio
+ok 29 - concentrado ordenado por promedio
+  ---
+  duration_ms: 0.467906
+  type: 'test'
+  ...
+# Subtest: credenciales por grupo y docentes
+ok 30 - credenciales por grupo y docentes
+  ---
+  duration_ms: 1.628986
+  type: 'test'
+  ...
+# Subtest: CSV y PDF con encabezado
+ok 31 - CSV y PDF con encabezado
+  ---
+  duration_ms: 5.58747
+  type: 'test'
+  ...
+# Subtest: registros inválidos
+    # Subtest: errores esperados
+    ok 1 - errores esperados
+      ---
+      duration_ms: 0.99806
+      type: 'test'
+      ...
+    # Subtest: VAL-01 continúa después de los errores
+    ok 2 - VAL-01 continúa después de los errores
+      ---
+      duration_ms: 1.350416
+      type: 'test'
+      ...
+    # Subtest: INV-20 conserva la calificación anterior
+    ok 3 - INV-20 conserva la calificación anterior
+      ---
+      duration_ms: 0.153834
+      type: 'test'
+      ...
+    1..3
+ok 32 - registros inválidos
+  ---
+  duration_ms: 3.292073
+  type: 'suite'
+  ...
+# Subtest: altas individuales
+    # Subtest: los parciales no superan 1.0
+    ok 1 - los parciales no superan 1.0
+      ---
+      duration_ms: 0.692051
+      type: 'test'
+      ...
+    # Subtest: inscripción a un curso de otro grupo
+    ok 2 - inscripción a un curso de otro grupo
+      ---
+      duration_ms: 0.320146
+      type: 'test'
+      ...
+    # Subtest: eventos emitidos
+    ok 3 - eventos emitidos
+      ---
+      duration_ms: 0.328187
+      type: 'test'
+      ...
+    1..3
+ok 33 - altas individuales
+  ---
+  duration_ms: 1.549421
+  type: 'suite'
+  ...
+1..33
+# tests 46
+# suites 5
+# pass 46
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 619.392401

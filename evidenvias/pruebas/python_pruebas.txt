@@ -1,0 +1,56 @@
+test_archivo_inexistente (tests.test_archivos.TestCargarJson.test_archivo_inexistente) ... ok
+test_carga_ejemplo_valido (tests.test_archivos.TestCargarJson.test_carga_ejemplo_valido) ... ok
+test_carga_invalidos_sin_error_de_estructura (tests.test_archivos.TestCargarJson.test_carga_invalidos_sin_error_de_estructura) ... ok
+test_faltan_llaves (tests.test_archivos.TestCargarJson.test_faltan_llaves) ... ok
+test_json_mal_formado (tests.test_archivos.TestCargarJson.test_json_mal_formado) ... ok
+test_llave_que_no_es_lista (tests.test_archivos.TestCargarJson.test_llave_que_no_es_lista) ... ok
+test_raiz_que_no_es_objeto (tests.test_archivos.TestCargarJson.test_raiz_que_no_es_objeto) ... ok
+test_csv_con_dos_decimales_y_bom (tests.test_archivos.TestExportar.test_csv_con_dos_decimales_y_bom) ... ok
+test_exportar_reportes_genera_todos_los_archivos (tests.test_archivos.TestExportar.test_exportar_reportes_genera_todos_los_archivos) ... ok
+test_json_convierte_decimal_y_conserva_acentos (tests.test_archivos.TestExportar.test_json_convierte_decimal_y_conserva_acentos) ... ok
+test_archivo_inexistente_devuelve_1_sin_traceback (tests.test_archivos.TestMain.test_archivo_inexistente_devuelve_1_sin_traceback) ... ok
+test_cli_sin_entrada_es_error_de_uso (tests.test_archivos.TestMain.test_cli_sin_entrada_es_error_de_uso) ... ok
+test_cli_genera_reportes_con_ejemplo (tests.test_archivos.TestReportes.test_cli_genera_reportes_con_ejemplo) ... ok
+test_contrasena_incorrecta (tests.test_autenticacion.TestInicioDeSesion.test_contrasena_incorrecta) ... ok
+test_contrasenas_no_estan_en_texto_plano (tests.test_autenticacion.TestInicioDeSesion.test_contrasenas_no_estan_en_texto_plano) ... ok
+test_cuenta_que_no_esta_en_los_datos (tests.test_autenticacion.TestInicioDeSesion.test_cuenta_que_no_esta_en_los_datos) ... ok
+test_un_usuario_por_rol (tests.test_autenticacion.TestInicioDeSesion.test_un_usuario_por_rol) ... ok
+test_usuarios_de_muestra (tests.test_autenticacion.TestInicioDeSesion.test_usuarios_de_muestra) ... ok
+test_cp01_promedio_ponderado (tests.test_casos_comunes.TestCasosComunes.test_cp01_promedio_ponderado) ... ok
+test_cp02_limite_de_aprobacion (tests.test_casos_comunes.TestCasosComunes.test_cp02_limite_de_aprobacion) ... ok
+test_cp03_reprobacion_y_riesgo_alto (tests.test_casos_comunes.TestCasosComunes.test_cp03_reprobacion_y_riesgo_alto) ... ok
+test_cp04_estadisticas_del_curso (tests.test_casos_comunes.TestCasosComunes.test_cp04_estadisticas_del_curso) ... ok
+test_cp05_calificacion_fuera_de_rango (tests.test_casos_comunes.TestCasosComunes.test_cp05_calificacion_fuera_de_rango) ... ok
+test_calificacion_final_regla_del_punto_cinco (tests.test_casos_comunes.TestReglas.test_calificacion_final_regla_del_punto_cinco) ... ok
+test_ejemplo_entrada_por_parciales (tests.test_casos_comunes.TestReglas.test_ejemplo_entrada_por_parciales) ... ok
+test_fronteras_de_riesgo (tests.test_casos_comunes.TestReglas.test_fronteras_de_riesgo) ... ok
+test_orden_por_apellidos_sin_acentos_y_desempate (tests.test_casos_comunes.TestReglas.test_orden_por_apellidos_sin_acentos_y_desempate) ... ok
+test_redondeo_institucional (tests.test_casos_comunes.TestReglas.test_redondeo_institucional) ... ok
+test_alumno_nuevo_con_cuenta_automatica_e_inscripcion (tests.test_control_escolar.TestControlEscolar.test_alumno_nuevo_con_cuenta_automatica_e_inscripcion) ... ok
+test_asignar_y_excepciones_de_inscripcion (tests.test_control_escolar.TestControlEscolar.test_asignar_y_excepciones_de_inscripcion) ... ok
+test_cambio_de_grupo_y_baja (tests.test_control_escolar.TestControlEscolar.test_cambio_de_grupo_y_baja) ... ok
+test_cuentas_y_respaldo (tests.test_control_escolar.TestControlEscolar.test_cuentas_y_respaldo) ... ok
+test_grupo_registrado_manualmente (tests.test_control_escolar.TestControlEscolar.test_grupo_registrado_manualmente) ... ok
+test_materia_duplicada_en_el_grupo (tests.test_control_escolar.TestControlEscolar.test_materia_duplicada_en_el_grupo) ... ok
+test_materia_nueva_crea_parciales_e_inscribe_al_grupo (tests.test_control_escolar.TestControlEscolar.test_materia_nueva_crea_parciales_e_inscribe_al_grupo) ... ok
+test_pesos_de_parciales_deben_sumar_100 (tests.test_control_escolar.TestControlEscolar.test_pesos_de_parciales_deben_sumar_100) ... ok
+test_plan_y_acta (tests.test_control_escolar.TestControlEscolar.test_plan_y_acta) ... ok
+test_contrasena_cambiada_ya_no_es_visible (tests.test_documentos.TestCredencialesYPdf.test_contrasena_cambiada_ya_no_es_visible) ... ok
+test_credenciales_por_grupo_y_docentes (tests.test_documentos.TestCredencialesYPdf.test_credenciales_por_grupo_y_docentes) ... ok
+test_pdf_valido_con_varias_paginas (tests.test_documentos.TestCredencialesYPdf.test_pdf_valido_con_varias_paginas) ... ok
+test_acta_resumen_cuadra (tests.test_documentos.TestDocumentos.test_acta_resumen_cuadra) ... ok
+test_concentrado_por_promedio (tests.test_documentos.TestDocumentos.test_concentrado_por_promedio) ... ok
+test_csv_y_json_con_encabezado (tests.test_documentos.TestDocumentos.test_csv_y_json_con_encabezado) ... ok
+test_encabezado_en_todos_los_reportes (tests.test_documentos.TestDocumentos.test_encabezado_en_todos_los_reportes) ... ok
+test_kardex_es_individual (tests.test_documentos.TestDocumentos.test_kardex_es_individual) ... ok
+test_eventos_emitidos (tests.test_validacion.TestAltasIndividuales.test_eventos_emitidos) ... ok
+test_inscripcion_de_otro_grupo (tests.test_validacion.TestAltasIndividuales.test_inscripcion_de_otro_grupo) ... ok
+test_parciales_no_superan_uno (tests.test_validacion.TestAltasIndividuales.test_parciales_no_superan_uno) ... ok
+test_errores_esperados (tests.test_validacion.TestRegistrosInvalidos.test_errores_esperados) ... ok
+test_inv20_conserva_calificacion_anterior (tests.test_validacion.TestRegistrosInvalidos.test_inv20_conserva_calificacion_anterior) ... ok
+test_val01_continua_despues_de_errores (tests.test_validacion.TestRegistrosInvalidos.test_val01_continua_despues_de_errores) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 0.074s
+
+OK
