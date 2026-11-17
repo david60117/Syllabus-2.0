@@ -1,12 +1,11 @@
 # Responsabilidad individual y flujo de trabajo
 
-> Sustituyan «Integrante A/B/C» por el nombre completo y el usuario de GitHub de cada quien.
 
 | Clave | Nombre | Usuario de GitHub |
 |---|---|---|
-| A | _(nombre)_ | _(usuario)_ |
-| B | _(nombre)_ | _(usuario)_ |
-| C | _(nombre)_ | _(usuario)_ |
+| A | _David Hernández_ | _(david60117)_ |
+| B | _Malkih López_ | _(malkihlg)_ |
+| C | _Yahir Orta_ | _(yahiralex59)_ |
 
 ## Reparto: cada integrante participa en los tres lenguajes
 
