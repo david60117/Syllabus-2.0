@@ -30,7 +30,7 @@ CONTRIBUCIONES.md responsabilidad individual de cada integrante y flujo de traba
 ## Comparativo visual
 
 ```bash
-python3 comparativo/medir.py --rapido      # o sin --rapido para incluir 20 000 estudiantes y 3 repeticiones
+python comparativo/medir.py --rapido      # o sin --rapido para incluir 20 000 estudiantes y 3 repeticiones
 ```
 
 Ejecuta las tres versiones con los mismos datos, en modo secuencial y concurrente, comprueba que los 13 reportes
@@ -86,9 +86,9 @@ sea la inicial; una contraseña elegida por el usuario se guarda cifrada (SHA-25
 
 ```bash
 cd python
-python3 -m src.main                                   # interfaz gráfica
-python3 -m src.main --cli --entrada ../datos/solicitudes_medias.json --salida reportes --modo concurrente
-python3 -m unittest discover -s tests -t .            # pruebas
+python -m src.main                                   # interfaz gráfica
+python -m src.main --cli --entrada ../datos/solicitudes_medias.json --salida reportes --modo concurrente
+python -m unittest discover -s tests -t .            # pruebas
 ```
 
 ### JavaScript (Node 18 o superior; sin dependencias)
